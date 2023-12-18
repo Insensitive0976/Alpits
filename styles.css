@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: url(C:\Users\Alexander\Alpits\Fuentes\Montserrat-Bold.ttf);
+    font-weight: bold;
+    font-style: bold;
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: url(C:\Users\Alexander\Alpits\Fuentes\Montserrat-Regular.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+html{
+    font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
+}
+body{
+    background-color: #000000;
+    background-image: url(background.png);
+    background-size: 1200px;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+h1{
+    display: none;
+}
+#alpits{
+    transition: box-shadow 0.8s ease;
+    height: 150px;
+    margin: 0px auto;
+    border-radius: 30px;
+    box-shadow: 0 0.4rem 1.6rem rgba(0, 0, 0, 0.8);
+}
+#alpits:hover{
+    box-shadow: 0 3.2rem 12.8rem rgba(0, 0, 0, 0.8);
+}
+#logo{
+    width: 200px;
+    margin: auto;
+}
+#usuario{
+    font-weight: bold;
+}
+#inputId{
+    text-align: center;
+    display: block;
+    margin: 20px auto 0px auto;
+    width: 100px;
+}
+#inicio{
+    transition: box-shadow 0.5s ease;
+    text-align: center;
+    width: 175px;
+    margin: 0 auto 0px auto;
+    padding: 20px 30px;
+    border: 4px solid #000000;
+    background-color: rgba(16, 16, 16, 0.9);
+    border-radius: 10px;
+}
+#inicio:hover{
+    box-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0, 0.8);
+}
+#logo-inicio{
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 275px;
+    margin: 0 auto 180px auto;
+    padding: 10px 5px;
+    border-radius: 20px;
+}
+.link{
+    transition: color 0.5s ease;
+    transition: text-shadow 0.5s ease;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline;
+}
+.link:hover{
+    color: #00ffff;
+    text-shadow: 1px 1px 5px rgba(255, 255, 255, 0.5);
+}
+.link:active{
+    color: #ff0000;
+}
+#links{
+    text-align: center;
+    width: 400px;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 5px 0px 5px;
+    border-radius: 10px;
+}
+#At{
+    margin-right: 30px;
+}
+#Blog{
+    margin-right: 30px;
+}
+#contenedor{
+    width: 400px;
+    margin: 150px auto 0;
+    height: 100%;
+    display: inline;
+}
+#alexander{
+    width: 100px;
+    margin: 5px 0 2px;
+    border-radius: 10px;
+}
+#autor{
+    text-align: center;
+    margin-left: 45px;
+    position: relative;
+    top: 489px;
+    background-color: rgba(0, 0, 0, 0.9);
+    width: 150px;
+    height: 150px;
+    padding-top: 5px;
+    border-radius: 10px;
+}
