@@ -48,8 +48,34 @@ h1{
 #inputId{
     text-align: center;
     display: block;
-    margin: 20px auto 0px auto;
+    margin: 10px auto 10px auto;
     width: 100px;
+}
+#aBlog{
+    text-decoration: none;
+}
+#buttonIngresar{
+    border: 0;
+    background-image: linear-gradient(
+        150deg, #9500ff, #09f, #00ddff
+    );
+    border-radius: 8px;
+    color: #ffffff;
+    padding: 2px 4px;
+    cursor: pointer;
+    transition: .3s;
+}
+#buttonIngresar span{
+    background-color: #111;
+    padding: 0px 10px;
+    border-radius: 6px;
+    transition: .3s;
+}
+#buttonIngresar:hover span{
+    background: none;
+}
+#buttonIngresar:active{
+    transform: scale(0.9);
 }
 #inicio{
     transition: box-shadow 0.5s ease;
@@ -58,7 +84,9 @@ h1{
     margin: 0 auto 0px auto;
     padding: 20px 30px;
     border: 4px solid #000000;
-    background-color: rgba(16, 16, 16, 0.9);
+    background-image: linear-gradient(
+        150deg, #ff004091, #ff00f291, #9500ff91
+    );
     border-radius: 10px;
 }
 #inicio:hover{
@@ -67,7 +95,7 @@ h1{
 #logo-inicio{
     background-color: rgba(0, 0, 0, 0.4);
     width: 275px;
-    margin: 0 auto 180px auto;
+    margin: 0 auto 160px auto;
     padding: 10px 5px;
     border-radius: 20px;
 }
@@ -106,6 +134,9 @@ h1{
     height: 100%;
     display: inline;
 }
+.pAutor{
+    font-size: 12px;
+}
 #alexander{
     width: 100px;
     margin: 5px 0 2px;
@@ -115,10 +146,10 @@ h1{
     text-align: center;
     margin-left: 45px;
     position: relative;
-    top: 489px;
+    top: 494px;
     background-color: rgba(0, 0, 0, 0.9);
     width: 150px;
-    height: 150px;
+    height: 145px;
     padding-top: 5px;
     border-radius: 10px;
 }
