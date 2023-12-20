@@ -142,8 +142,7 @@ nav{
     position: relative;
 }
 #buttonIngreso{
-    background-color: transparent;
-    backdrop-filter: blur(1px);
+    background-color: #000000;
     cursor: pointer;
     border: none;
     padding: 8px 16px;
@@ -155,6 +154,7 @@ nav{
     border-radius: 40px;
     width: 200px;
     height: 45px;
+    transition: background .3s;
 }
 #buttonIngreso:before{
     content: "";
@@ -169,6 +169,9 @@ nav{
     border-radius: 10px;
     filter: blur(8px);
     animation: glowing 20s linear infinite;
+}
+#buttonIngreso:hover{
+    background: none;
 }
 #buttonIngreso:active{
     transform: scale(0.9);
