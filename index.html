@@ -3,46 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="blog,charla,grupos,amigos">
-    <meta name="description" content="Alpits es un conjunto de proyectos desarrollados por una misma persona a través de su avance en el mundo de la programación web.">
+    <meta name="keywords" content="alpits,blog,social,grupos">
+    <meta name="description" content="Acceso anticipado, un blog.">
     <meta name="author" content="Insensitive">
     <meta name="robots" content="index">
-    <link rel="icon" href="alpits.ico">
+    <link rel="icon" href="icon.ico">
     <link rel="stylesheet" href="styles.css">
-    <script src="javascript.js" defer></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="script.js" defer></script>
     <title>Alpits</title>
-    <!-- <audio id="audioBackground">
-        <source src="backgroundaudio.mp3" type="audio/mp3">
-    </audio> -->
 </head>
 <body>
     <h1>Alpits</h1>
-    <div id="autor">
-        <p class="pAutor">Made by</p>
-        <img id="alexander" src="insensitive.jpg" alt="Profile-image" title="Insensitive Profile">
-        <p class="pAutor">Insensitive</p>
-    </div>
-    <section id="contenedor">
-        <div id="logo-inicio">
-            <div id="logo">
-                <img id="alpits" src="alpits.jpg" alt="Alpits-logo" title="Alpits Logo">
-            </div>
-            <div id="inicio">
-                <label for="inputId" id="usuario">Usuario</label>
-                <input id="inputId" type="password" value="000000000"   placeholder="secret id">
-                <a id="aBlog" href="blog.html">
-                    <button id="buttonIngresar">
-                        <span>Ingreso</span>
-                    </button>
-                </a>
-            </div>
-        </div>
-        
-        <div id="links">
-            <a id="At" class="link" href="AncordText/at.html">AncordText</a>
-            <a id="Blog" class="link" href="Blog/blog.html">InsensitiveBlog</a>
-            <a id="Calc" class="link" href="Calculadora/calc.html">Calculadora</a>
+    <header>
+        <img id="imgAlpits" src="alpits.png" alt="Alpits-Logo" title="Alpits-Logo">
+        <a href="blog.html">
+            <button id="buttonInicio">
+                <span>¡Comenzar!</span>
+            </button>
+        </a>
+    </header>
+    <section>
+        <nav>
+            <i class='bx bxs-spa'></i>
+            <i class='bx bxs-conversation'></i>
+            <i class='bx bxs-user'></i>
+            <i class='bx bxs-exit'></i>
+        </nav>
+        <div id="divIngreso">
+            <form>
+                <h2 id="h2Administracion">
+                    <label for="inputIdSecreto">Administración</label>
+                </h2>
+                <div id="divInputId">
+                    <input id="inputIdSecreto" type="password" placeholder="Id secreto" required>
+                    <i class='bx bxs-lock-alt'></i>
+                </div>
+                <button id="buttonIngreso" type="submit">Ingreso</button>
+            </form>
         </div>
     </section>
+    <footer>
+        <h2 id="h2Contacto">Contacto</h2>
+        <div id="divLinks">
+            <a id="aTelegram" href="index.html">
+                <i class='bx bxl-telegram'></i>
+            Telegram</a>
+            <a id="aGmail" href="index.html">
+                <i class='bx bxl-gmail' ></i>
+            Gmail</a>
+            <a id="aWhatsapp" href="index.html">
+                <i class='bx bxl-whatsapp'></i>
+            Whatsapp</a>
+        </div>
+    </footer>
 </body>
 </html>

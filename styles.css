@@ -1,16 +1,17 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 @font-face {
     font-family: 'Montserrat';
-    src: url(C:\Users\Alexander\Alpits\Fuentes\Montserrat-Bold.ttf);
+    src: url(Fuentes/Montserrat-Bold.ttf);
     font-weight: bold;
     font-style: bold;
 }
 @font-face {
     font-family: 'Montserrat';
-    src: url(C:\Users\Alexander\Alpits\Fuentes\Montserrat-Regular.ttf);
+    src: url(Fuentes/Montserrat-Regular.ttf);
     font-weight: normal;
     font-style: normal;
 }
@@ -19,137 +20,234 @@ html{
     color: #ffffff;
 }
 body{
-    background-color: #000000;
-    background-image: url(background.png);
-    background-size: 1200px;
+    background-color: #111;
+    background-image: url(background.jpg);
+    background-size: cover;
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: center;
+    background-attachment: fixed;
 }
 h1{
     display: none;
 }
-#alpits{
-    transition: box-shadow 0.8s ease;
+#imgAlpits{
+    width: 400px;
     height: 150px;
-    margin: 0px auto;
-    border-radius: 30px;
-    box-shadow: 0 0.4rem 1.6rem rgba(0, 0, 0, 0.8);
-}
-#alpits:hover{
-    box-shadow: 0 3.2rem 12.8rem rgba(0, 0, 0, 0.8);
-}
-#logo{
-    width: 200px;
-    margin: auto;
-}
-#usuario{
-    font-weight: bold;
-}
-#inputId{
-    text-align: center;
     display: block;
-    margin: 10px auto 10px auto;
-    width: 100px;
+    margin: 0 0 20px;
 }
-#aBlog{
-    text-decoration: none;
-}
-#buttonIngresar{
+#buttonInicio{
     border: 0;
     background-image: linear-gradient(
         150deg, #9500ff, #09f, #00ddff
     );
     border-radius: 8px;
     color: #ffffff;
-    padding: 2px 4px;
+    padding: 27px 3px;
     cursor: pointer;
     transition: .3s;
+    position: absolute;
+    left: 90px;
 }
-#buttonIngresar span{
+#buttonInicio span{
     background-color: #111;
-    padding: 0px 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 28px;
+    font-weight: bold;
+    padding: 25px 40px;
     border-radius: 6px;
     transition: .3s;
 }
-#buttonIngresar:hover span{
+#buttonInicio:hover{
+    box-shadow: 2px 2px 10px #000000;
+}
+#buttonInicio:hover span{
     background: none;
 }
-#buttonIngresar:active{
+#buttonInicio:active{
     transform: scale(0.9);
 }
-#inicio{
-    transition: box-shadow 0.5s ease;
-    text-align: center;
-    width: 160px;
-    margin: 0 auto 0px auto;
-    padding: 20px 30px;
-    border: 3px solid #000000;
-    background-image: linear-gradient(
-        150deg, #ff004091, #ff00f291, #9500ff91
-    );
+header{
+    background-color: transparent;
+    border: 2px solid #00000032;
+    backdrop-filter: blur(1px);
+    box-shadow: 0 0 10px #ffffff32;
     border-radius: 10px;
+    padding: 10px 15px 40px;
+    position: absolute;
+    left: 20px;
+    top: 200px;
+    text-align: center;
+    transition: box-shadow .3s;
 }
-#inicio:hover{
-    box-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0, 0.8);
+header:hover{
+    box-shadow: 2px 2px 10px #000000;
 }
-#logo-inicio{
-    background-color: rgba(0, 0, 0, 0.4);
-    width: 260px;
-    margin: 0 auto 165px auto;
-    padding: 10px 5px;
-    border-radius: 20px;
+header:hover #buttonInicio{
+    box-shadow: 2px 2px 10px #000000;
 }
-.link{
-    transition: color 0.5s ease;
-    transition: text-shadow 0.5s ease;
+nav i{
+    margin: 2px 5px 0 0;
+}
+nav{
+    background-color: transparent;
+    border: 2px solid #00000032;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px #ffffff32;
+    text-align: right;
+    font-size: 20px;
+    margin-bottom: 50px;
+    width: 420px;
+    height: 30px;
+    position: absolute;
+    top: 5px;
+    right: 30px;
+    border-radius: 10px;
+    transition: .3s;
+}
+#h2Administracion{
+    font-size: 30px;
+    text-align: center;
+}
+#labelIDSecreto{
+    display: block;
+    text-align: center;
+}
+#inputIdSecreto{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid #00000032;
+    border-radius: 40px;
+    font-size: 16px;
     color: #ffffff;
-    text-decoration: none;
+    padding: 20px 45px 20px 20px;
+}
+#inputIdSecreto::placeholder{
+    color: #ffffff;
+}
+#divInputId i{
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+}
+#divInputId{
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+    position: relative;
+}
+#buttonIngreso{
+    background-color: transparent;
+    backdrop-filter: blur(1px);
+    cursor: pointer;
+    border: none;
+    padding: 8px 16px;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
     font-weight: bold;
+    position: relative;
+    border-radius: 40px;
+    width: 200px;
+    height: 45px;
+}
+#buttonIngreso:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #ff0000, #c42121, #eb334b, #c5315d, #c531b9, #ae00ff, #8c00ff, #6200ff, #314cc5, #319bc5, #314cc5, #6200ff, #8c00ff, #ae00ff, #c531b9, #c5315d, #c42121, #eb334b);
+    background-size: 800%;
+    border-radius: 10px;
+    filter: blur(8px);
+    animation: glowing 20s linear infinite;
+}
+#buttonIngreso:active{
+    transform: scale(0.9);
+    transition: .3s;
+}
+@keyframes glowing{
+    0% {background-position: 0 0;}
+    50% {background-position: 400% 0;}
+    100% {background-position: 0 0;}
+}
+#divIngreso{
+    background-color: transparent;
+    border: 2px solid #00000032;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px #ffffff32;
+    text-align: center;
+    width: 420px;
+    position: absolute;
+    right: 30px;
+    top: 70px;
+    border-radius: 10px;
+    padding: 30px 40px 45px;
+    transition: .3s;
+}
+section:hover #divIngreso{
+    box-shadow: 2px 2px 10px #000000;
+}
+section:hover nav{
+    box-shadow: 2px 2px 10px #000000;
+}
+#h2Contacto{
+    background-color: #000000aa;
+    border: 2px solid #00000032;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px #ffffff32;
     display: inline;
+    position: absolute;
+    bottom: 35px;
+    right: 30px;
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 5px 12px;
 }
-.link:hover{
+#aTelegram, #aGmail{
+    margin-right: 50px;
+}
+#aTelegram, #aGmail, #aWhatsapp{
+    transition: .3s;
+}
+#aTelegram:hover{
     color: #00ffff;
-    text-shadow: 1px 1px 5px rgba(255, 255, 255, 0.5);
 }
-.link:active{
+#aGmail:hover{
     color: #ff0000;
 }
-#links{
+#aWhatsapp:hover{
+    color: #00ff00;
+}
+#divLinks a{
+    color: #ffffff;
+    text-decoration: none;
+}
+#divLinks{
+    background-color: #000000aa;
+    border: 2px solid #00000032;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px #ffffff32;
+    width: 420px;
+    padding: 2px 0;
+    border-radius: 10px;
+    position: absolute;
     text-align: center;
-    width: 400px;
-    margin: auto;
-    background-color: rgba(0, 0, 0, 0.7);
-    padding: 5px 0px 5px;
-    border-radius: 10px;
+    bottom: 5px;
+    right: 30px;
+    transition: .3s;
 }
-#At{
-    margin-right: 30px;
+footer:hover #h2Contacto{
+    box-shadow: 2px 2px 10px #000000;
 }
-#Blog{
-    margin-right: 30px;
-}
-#contenedor{
-    width: 400px;
-    margin: 150px auto 0;
-    height: 100%;
-    display: inline;
-}
-.pAutor{
-    font-size: 12px;
-}
-#alexander{
-    width: 100px;
-    margin: 5px 0 2px;
-    border-radius: 10px;
-}
-#autor{
-    text-align: center;
-    margin-left: 45px;
-    position: relative;
-    top: 494px;
-    background-color: rgba(0, 0, 0, 0.9);
-    width: 150px;
-    height: 145px;
-    padding-top: 5px;
-    border-radius: 10px;
+footer:hover #divLinks{
+    box-shadow: 2px 2px 10px #000000;
 }
