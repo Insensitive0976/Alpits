@@ -1,0 +1,171 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: 'SingleDay';
+    src: url(SingleDay-Regular.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Sevillana';
+    src: url(Sevillana-Regular.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+html{
+    color: #e8eaed;
+    font-family: 'SingleDay';
+}
+body{
+    background-color: #000000
+}
+/* *,*:after,*:before{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+} */
+.snow_wrap{
+	height: 100vh;
+	width: 100%;
+	background:url(background.jpg);
+	background-size: contain;
+    background-repeat: no-repeat;
+	background-position: center center;
+	overflow: hidden;
+	position: fixed;
+    z-index: -3;
+}
+
+.snow, .snow:before, .snow:after {
+  position: absolute;
+  top: -650px;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-image: 
+  radial-gradient(4px 4px at 100px 50px, #fff , transparent), 
+  radial-gradient(6px 6px at 200px 150px, #fff, transparent), 
+  radial-gradient(3px 3px at 300px 250px, #fff 50%, transparent), 
+  radial-gradient(4px 4px at 400px 350px, #fff 50%, transparent), 
+  radial-gradient(6px 6px at 500px 100px, #fff 50%, transparent), 
+  radial-gradient(3px 3px at 50px 200px, #fff 50%, transparent), 
+  radial-gradient(4px 4px at 150px 300px, #fff 50%, transparent), 
+  radial-gradient(6px 6px at 250px 400px, #fff 50%, transparent), 
+  radial-gradient(3px 3px at 350px 500px, #fff 50%, transparent);
+  background-size: 650px 650px;
+  animation: snow 3s linear infinite;
+  content: "";
+  z-index: -2;
+}
+
+.snow:after {
+  margin-left: -250px;
+  opacity: 0.5;
+  filter: blur(2px);
+  animation-duration: 6s;
+  animation-direction: reverse;
+}
+
+.snow:before {
+	margin-left: -350px;
+  opacity: 0.7;
+  filter: blur(1px);
+  animation-duration: 9s;
+  animation-direction: reverse;
+}
+@keyframes snow {
+  to {
+    transform: translateY(650px);
+  }
+}
+#fondonegro{
+    background-color: #000000aa;
+    height: 100vh;
+	width: 100%;
+    position: absolute;
+}
+h1{
+    font-size: 40px;
+    text-align: center;
+    background-color: #080808;
+    padding: 10px 0;
+    width: 100%;
+    position: fixed;
+    top: 0;
+}
+.escrito{
+    font-size: 20px;
+}
+span{
+    font-family: 'Sevillana';
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 72px;
+}
+.sidebar-left, .sidebar-right{
+    width: 22%;
+    background-color: #080808;
+    padding: 20px;
+    border-radius: 5px;
+}
+.feed{
+    width: 54%;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+h2{
+    text-align: center;
+}
+footer{
+    background-color: #080808;
+    display: flex;
+    justify-content: space-between;
+}
+.imgGif1{
+    width: 80%;
+    border-radius: 20px;
+}
+.pGif1{
+    font-size: 20px;
+}
+nav{
+	width: 13.5%;
+	background-color: #080808;
+	font-size: 20px;
+}
+.menu-horizontal{
+	list-style: none;
+	display: flex;
+	justify-content: space-around;
+}
+.menu-horizontal > li > p{
+	display: block;
+	padding: 5px 10px;
+    cursor: default;
+}
+.menu-horizontal > li:hover{
+	background-color: #101010;
+}
+.menu-vertical{
+	position: absolute;
+	display: none;
+	width: 25%;
+    background-color: #000000aa;
+    border-radius: 20px;
+	padding: 15px 15px 15px 20px;
+    position: absolute;
+    bottom: 20px;
+}
+.menu-horizontal li:hover .menu-vertical{
+	display: block;
+}
+#divFootLateral{
+    width: 30%;
+}
