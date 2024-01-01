@@ -18,9 +18,19 @@
 html{
     color: #e8eaed;
     font-family: 'SingleDay';
+    font-size: 16px;
 }
 body{
     background-color: #000000
+}
+body::-webkit-scrollbar{
+    width: 5px;
+    background-color: #000000;
+}
+body::-webkit-scrollbar-thumb{
+    background-color: aqua;
+    border-radius: 10px;
+    border-right: 2px solid #000000;
 }
 /* *,*:after,*:before{
 	-webkit-box-sizing: border-box;
@@ -88,24 +98,51 @@ body{
 	width: 100%;
     position: absolute;
 }
-h1{
+header p{
+    font-size: 30px;
+    text-align: center;
+    width: 2.5%;
+    z-index: 10;
+    background-color: transparent;
+    backdrop-filter: blur(20px);
+    display: grid;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+header p:hover{
+    color: aqua;
+}
+header h1{
+    width: 97.5%;
     font-size: 40px;
     text-align: center;
-    background-color: #000000;
-    padding: 10px 0;
+    display: inline;
+}
+header{
+    display: flex;
+    justify-content: space-between;
     width: 100%;
+    background-color: #000000;
     position: fixed;
-    top: 0;
     border: solid 1px #101010;
+    top: 0;
     z-index: 1;
+    padding: 10px 0;
 }
 main{
     display: flex;
     justify-content: space-between;
     margin-top: 73px;
 }
-.escrito{
+.feed p{
     font-size: 20px;
+    margin-bottom: 20px;
+    color: #808080;
+}
+#pCelebracion{
+    font-size: 30px;
+    text-align: center;
 }
 span{
     font-family: 'Sevillana';
@@ -126,6 +163,9 @@ span{
 }
 .barralateral-derecha{
     right: 0;
+}
+.barralateral-derecha img{
+    margin: 3px 0;
 }
 .feed{
     width: 54%;
@@ -150,6 +190,7 @@ footer{
 .imgGif2{
     width: 90%;
     border-radius: 20px;
+    margin-top: 5px;
 }
 .pGif1{
     font-size: 20px;
@@ -159,10 +200,15 @@ footer{
     font-weight: bold;
     margin: 5px 0 0 20px;
     letter-spacing: 2px;
+    display: inline;
+    cursor: default;
+    transition: all 0.5s ease;
+}
+#pMatch:hover{
+    color: aqua;
 }
 nav{
 	width: 13.5%;
-	background-color: #000000;
 	font-size: 20px;
 }
 .menu-horizontal{
@@ -174,14 +220,19 @@ nav{
 	display: block;
 	padding: 1px 15px;
     cursor: default;
+    transition: all 0.5s ease;
 }
 .menu-horizontal > li{
     display: flex;
     justify-content: center;
     position: relative;
+    transition: all 0.5s ease;
 }
 .menu-horizontal > li:hover{
-	background-color: #050505;
+	background-color: #ffffff10;
+}
+.menu-horizontal > li:hover > p{
+	color: #ff8080;
 }
 .menu-vertical{
 	position: absolute;
@@ -201,12 +252,19 @@ nav{
     justify-content: center;
 }
 .menu-vertical:hover{
-    background-color: #000000;
+    background-color: #ff8080aa;
 }
 .divFootLateral{
-    width: 30%;
+    width: 40%;
 }
-#pAspiracion{
+#pAgradecimiento{
     margin: 5px 20px 0 0;
     text-align: right;
+}
+.fondocambio{
+    transition: all 3s ease;
+}
+.fondop{
+    background-color: #253b70;
+    background-image: linear-gradient(to bottom right, #253b70, #0F2027);
 }

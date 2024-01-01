@@ -3,34 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Para Darly, Te Amooo.">
+    <meta name="author" content="Aysha">
+    <meta name="robots" content="noindex">
+    <link rel="icon" href="icon.ico">
     <link rel="stylesheet" href="fordarly.css">
     <title>Feliz Año, Mi Darly</title>
-   <!--  <script defer>
-        alert('Esta página no ha sido diseñada para dispositivos distintos a una PC, pues el ingreso con estos puede generar errores. Asegúrate de cumplir con la indicación antes de continuar. Quedas advertida, con cariño: Amber :3')
-    </script> -->
 </head>
 <body>
     <div class="snow_wrap">
         <div class="snow"></div>
         <div id="fondonegro"></div>
     </div>
-    <header>
-        <h1>¡Felices Fiestas!</h1>
+    <header class="fondocambio">
+        <p id="color">:3</p>
+        <h1>¡Yo me quedo con la nena bonita!</h1>
     </header>
     <main>
-        <aside class="barralateral-izquierda">
+        <aside class="barralateral-izquierda fondocambio">
           <h2>¡Saludos!</h2>
           <img class="imgGif1" src="gifs/cute.gif" alt="No se ve unu" title="¡Tierna, tierna eres!">
           <p class="pGif1">¡Pero que linda te ves hoy!</p>
           <img class="imgGif1" src="gifs/bien.gif" alt="Nooooooooo" title="¡Bien, bien, bien linda!">
-          <p class="pGif1">Espero hayas disfrutado mucho ♡</p>
+          <p class="pGif1">¡Espero hayas disfrutado mucho!</p>
+          <p>Podrá haber sido agotador, pero yo creo que sigues viendote hermosa uwu</p>
         </aside>
         
         <section class="feed">
-            <p class="escrito">He aquí una nueva y novedosa oportunidad para darte a conocer, que <span>TE AMOOOOO</span></p>
+            <p>He aquí una nueva y novedosa oportunidad para darte a conocer, que <span>TE AMOOOOO</span></p>
+            <p>Ha pasado un largo tiempo desde la última vez que me emocionaba tanto por algo, este trabajo me ha tomado algo más de 12 horas, he tratado de perfeccionar los detalles y mantener una bonita apariencia, espero puedas ver todo como me encantaría ^^</p>
+            <p>Dos años es lo que llevamos, al momento de pensar en ello creí que era poco, pues siento que te conozco desde mucho antes. Gracias por compartir tanto conmigo, tu forma de ser me brinda una esperanza motivadora, de que las bellas personas en verdad existen :3</p>
+            <p>Mientras paso por tiempos complicados, el alivio de sentirte cercana ha jugado con gran importancia. Me encantaría poder conocerte en algún momento, aún cuando ello parece tan lejano, me hago ilusión a la bonita sensación ♡</p>
+            <p>¡Te deseo una bonita navidad, y un gran y prometedor año nuevo!</p>
+            <p>Que las sorpresas sigan presentes y tu carisma no se vea debilitado por la oscuridad del nuevo mundo, tómame siempre presente a mí y las ganas que tengo de que permanezcas alegreeeee ^^</p>
+            <p id="pCelebracion">¡¡Felices Fiestassssssss!!</p>
         </section>
     
-        <aside class="barralateral-derecha">
+        <aside class="barralateral-derecha fondocambio">
           <h2>Mi honesta reacción</h2>
           <img class="imgGif1" src="gifs/muak.webp" alt="Debería aparecer un besito :(" title="¡Muak! (quiero chichis)">
           <p class="pGif1">¡Muak!</p>
@@ -39,7 +48,7 @@
           <p>Ya es tiempo de que comiences a ahorrar para darme ese helado, ¿no crees?</p>
         </aside>
     </main>
-    <footer>
+    <footer class="fondocambio">
         <div class="divFootLateral">
             <p id="pMatch">♡ Amber x Darly ♡ Una linda parejita</p>
         </div>
@@ -56,26 +65,50 @@
                 <li>
                     <p>♧</p>
                     <div class="menu-vertical">
-
+                        <p>Que linda colaaaaaaaaa</p>
+                        <img class="imgGif2" src="gifs/muak1.gif" alt="¿Y ahora?" title="Besos en el cachete :3">
                     </div>
                 </li>
                 <li>
-                    <p>◇</p>
+                    <p>❀</p>
                     <div class="menu-vertical">
-
+                        <p>¿La recuerdas? Le amé &#60;3</p>
+                    <img class="imgGif2" src="flor.jpg" alt="Bonita bonita" title="Tu dedicación &#60;3">
                     </div>
                 </li>
                 <li>
                     <p>☆</p>
                     <div class="menu-vertical">
-                        <p>Agradecimiento especial para Alexander &#60;3</p>
+                        <p>Esto es una página, podrás volver a verla siempre que quieras, desde donde sea, cuando más lo necesites, guarda el link si así lo deseas.</p>
+                        <p>Espero no se presente ningún error, la hice con mucho AMOR ^^</p>
+                        <img class="imgGif2" src="gifs/heart.gif" alt="<3" title="¿Do You Love Me?">
                     </div>
                 </li>
             </ul>
         </nav>
         <div class="divFootLateral">
-            <p id="pAspiracion">Espero no se presente ningún error, lo hice con mucho AMOR ^^</p>
+            <p id="pAgradecimiento">Agradecimiento especial para Alexander &#60;3</p>
         </div>
     </footer>
 </body>
+    <script defer>
+        alert('Esta página no ha sido diseñada para dispositivos distintos a una PC, pues el ingreso con estos puede generar errores. Asegúrate de cumplir con la indicación antes de continuar. Quedas advertida, con cariño: Amber :3')
+
+        let fondocolor = document.getElementById("color");
+        let cabeza = document.querySelector('header');
+        let barraizq = document.getElementsByClassName('barralateral-izquierda');
+        let barrader = document.getElementsByClassName('barralateral-derecha');
+        let pie = document.querySelector("footer");
+
+        fondocolor.onclick = function(){
+            cabeza.classList.toggle("fondop");
+            for (let i = 0; i < barraizq.length; i++) {
+            barraizq[i].classList.toggle("fondop");
+            }
+            for (let i = 0; i < barrader.length; i++) {
+            barrader[i].classList.toggle("fondop");
+            }
+            pie.classList.toggle("fondop");
+        }
+    </script>
 </html>
