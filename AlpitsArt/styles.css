@@ -1,0 +1,433 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url(../Fuentes/Montserrat-Regular.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+}
+body{
+    background-color: #efefef;
+    background-image: url(imgs/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+body::-webkit-scrollbar{
+    width: 5px;
+    height: 5px;
+    background-color: #000000;
+}
+body::-webkit-scrollbar-thumb{
+    background-color: #00ffff;
+    border-radius: 10px;
+}
+header{
+    background-image: linear-gradient(90deg, #e0e0e0, #ffffff);
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    height: 7vh;
+    top: 0;
+    box-shadow: 0px 3px 10px #00000030;
+    z-index: 10;
+}
+#imgAlpits{
+    margin-left: 20px;
+    /* background-color: transparent;
+    border: 2px solid #00000032;
+    backdrop-filter: blur(1px);
+    box-shadow: 0 0 10px #ffffff32;
+    border-radius: 10px; */
+}
+h1{
+    display: none;
+}
+#divPerfil{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: content-box;
+    /* background-image: linear-gradient(90deg, #9500ff, #09f, #00ddff); */
+    border-radius: 10px;
+}
+#divPerfilText{
+    margin-left: 10px;
+    font-size: 14px;
+    font-weight: bold;
+}
+#divPerfil img{
+    width: 7vh;
+    height: 7vh;
+    margin: 0 5px 0 10px;
+    border: 2px solid #00000032;
+    box-shadow: 0 0 10px #ffffff32;
+    border-radius: 100px;
+}
+main{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 7vh;
+}
+section{
+    display: grid;
+    place-items: center;
+    width: 71vw;
+    transition: width 0.5s ease;
+}
+aside{
+    height: 93vh;
+    position: sticky;
+    top: 7vh;
+    box-shadow: 0px 3px 10px #00000030;
+    background-color: #ffffff;
+}
+#aside2{
+    overflow: auto;
+}
+#aside2::-webkit-scrollbar{
+    width: 5px;
+    height: 5px;
+    background-color: #000000;
+}
+#aside2::-webkit-scrollbar-thumb{
+    background-color: #ff8080;
+    border-radius: 10px;
+}
+#aside2 nav{
+    margin: 2vh auto 0;
+    width: 80%;
+    box-sizing: content-box;
+}
+#aside2 nav ul{
+    list-style-type: none;
+}
+#aside2 nav{
+    font-size: 19px;
+    font-weight: bold;
+}
+
+#aside2 nav i{
+    margin-right: 2%;
+}
+.iconmenu{
+    font-size: 7vh;
+    cursor: pointer;
+}
+.time{
+    font-size: 7vh;
+}
+.circle{
+    margin-top: 2vh;
+    font-size: 2.5vh;
+}
+#divAside1Menu{
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    transition: background-color 0.3s ease;
+    height: 7vh;
+    overflow: hidden;
+}
+#divAside1Menu:hover{
+    background-color: #e0e0e0;
+}
+#divAside1Perfil{
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    height: 46.2vh;
+}
+#divA1PerfilCabeza{
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    height: 21.5vh;
+}
+#divA1PerfilCabeza img{
+    width: 4vw;
+    height: 4vw;
+    border-radius: 100px;
+    border: 2px solid #00000032;
+    box-shadow: 0 0 10px #ffffff32;
+    margin-bottom: 6.2vh;
+}
+#divA1PerfilMenu{
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+}
+#divAside1Perfil i{
+    font-size: 25px;
+    margin: 0.5vh 0;
+}
+#divAside1Recientes{
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+}
+#divAside1Pie{
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+}
+#asides1-3{
+    min-width: 4vw;
+    display: flex;
+}
+#aside1{
+    max-width: 4vw;
+    display: flex;
+    flex-direction: column;
+}
+#aside2{
+    width: 25vw;
+}
+.hr1{
+    margin: 1vh 0;
+}
+.hr2{
+    width: 90%;
+    margin: 2vh auto;
+}
+.hr3{
+    width: 80%;
+    margin: 2vh auto;
+}
+.hr4{
+    opacity: 30%;
+    width: 80%;
+    margin: 0 auto;
+}
+.hr5{
+    width: 80%;
+    margin: 0 auto 2vh;
+}
+#divMensajes{
+    width: 80%;
+    margin: 0 auto 1vh;
+}
+#divMensajes h2{
+    font-size: 100%;
+    text-align: center;
+    background-color: #000000;
+    color: #ffffff;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    box-sizing: content-box;
+    padding: 0.5vh 0;
+}
+#divCajaM{
+    background-color: #ffffff;
+    border: 2px solid #00000032;
+    box-shadow: 0 0 10px #00000032;
+    width: 100%;
+    display: flex;
+    place-items: center;
+    flex-direction: column;
+    height: 41vh;
+    border-bottom-left-radius: 10px;
+    overflow: auto;
+}
+#divCajaM::-webkit-scrollbar{
+    width: 5px;
+    height: 5px;
+    background-color: #000000;
+}
+#divCajaM::-webkit-scrollbar-thumb{
+    background-color: #00ff80;
+    border-radius: 10px;
+}
+.divMensaje{
+    width: 90%;
+    display: flex;
+    margin: 0.5vh 0;
+}
+.divMensaje img{
+    width: 5vh;
+    height: 5vh;
+    margin-right: 5px;
+    border-radius: 100px;
+    border: 2px solid #00000032;
+    box-shadow: 0 0 10px #ffffff32;
+}
+.divMensaje p{
+    box-sizing: content-box;
+    padding: 1vh;
+    font-size: 2vh;
+    background-color: #eeeeee;
+    border-radius: 10px;
+}
+.divMensaje a{
+    text-decoration: none;
+    color: #ff00ff;
+    font-weight: bold;
+}
+.divMensaje a:active{
+    color: #00ff80;
+}
+#divBotones{
+    display: flex;
+    justify-content: space-between;
+}
+#divBotones button{
+    height: 5vh;
+    background-color: #000000;
+    border: none;
+    border-radius: 10px;
+    color: #ffffff;
+    font-size: 100%;
+    margin-top: 5px;
+    cursor: pointer;
+}
+#buttonPubM{
+    width: 85%;
+}
+#buttonPubMHelp{
+    width: 12%;
+}
+#aside3{
+    width: 0;
+    overflow: hidden;
+    transition: width 0.5s ease;
+}
+#divAsidePerfil{
+    height: 55.5vh;
+}
+#divAPerfilCabeza{
+    display: flex;
+    min-width: 25vw;
+    place-items: center;
+    flex-direction: column;
+    box-sizing: content-box;
+    padding: 2vh 0;
+}
+#divAPerfilCabeza img{
+    width: 10vw;
+    height: 10vw;
+    border-radius: 100px;
+    margin-bottom: 1vh;
+    border: 2px solid #00000032;
+    box-shadow: 0 0 10px #ffffff32;
+}
+#divAPerfilCabeza h2{
+    position: relative;
+}
+#divAPerfilCabeza h2 i{
+    position: absolute;
+    left: -35%;
+    top: 10%;
+}
+#APerfilMenu h3{
+    padding: 0.5vh 0 0.5vh 1vw;
+    font-size: 19px;
+    transition: background-color 0.3s ease;
+}
+#APerfilMenu h3:hover{
+    background-color: #e0e0e0;
+}
+#divAsideRecientes{
+    min-width: 25vw;
+}
+#divAsideRecientes h2{
+    padding: 1vh 0 0.5vh 1vw;
+}
+#divAsideRecientes ul{
+    list-style: none;
+    padding: 1vh 0 0.5vh 1vw;
+}
+#divAsidePie{
+    display: flex;
+    justify-content: space-between;
+    min-width: 25vw;
+}
+#divPerfiles{
+    transition: box-shadow 0.5s ease;
+    width: 90%;
+    margin: 1rem 0;
+    border-radius: 10px;
+    background-color: #efefef;
+    border: 2px solid #00000032;
+    box-shadow: 0 0 10px #ffffff32;
+}
+#divPerfiles:hover{
+    box-shadow: 0px 3px 10px #00000030;
+}
+#divImagenesP{
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    box-sizing: content-box;
+    margin: 1vh auto;
+}
+#h2Perfiles{
+    font-size: 18px;
+    padding: 5px 0 5px 10px;
+    background-color: #000000;
+    color: #ffffff;
+    box-sizing: content-box;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+#divImagenesP img{
+    width: 7vh;
+    height: 7vh;
+    border-radius: 100px;
+    border: 2px solid #00000032;
+    box-shadow: 0 0 10px #ffffff32;
+}
+article{
+    transition: box-shadow 0.5s ease;
+    width: 90%;
+    margin: 1rem 0;
+    border-radius: 10px;
+    padding: 0 0 10px;
+    background-color: #efefef;
+    border: 2px solid #00000032;
+    box-shadow: 0 0 10px #ffffff32;
+}
+article:hover{
+    box-shadow: 0px 3px 10px #00000030;
+}
+.divArtPerfil{
+    background-color: #000000;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding-left: 1%;
+}
+.divArtPerfil img{
+    width: 5vh;
+    height: 5vh;
+    border-radius: 100px;
+    margin: 3px 0;
+}
+.pArtPerfil{
+    margin-left: 5px;
+}
+.divArtImagen{
+    width: 100%;
+    display: grid;
+    place-items: center;
+    margin: 20px 0;
+}
+article img{
+    transition: box-shadow 0.5s ease;
+    width: 90%;
+    border-radius: 10px;
+    cursor: pointer;
+}
+article img:hover{
+    box-shadow: 0px 3px 10px #00000030;
+}
+article h3, article p{
+    margin: 5px 0 5px 20px;
+}
