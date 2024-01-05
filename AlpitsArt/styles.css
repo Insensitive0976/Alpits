@@ -1,9 +1,19 @@
+/* Enlaces de fuente */
+
+
+
 @font-face {
     font-family: 'Montserrat';
     src: url(../Fuentes/Montserrat-Regular.ttf);
     font-weight: normal;
     font-style: normal;
 }
+
+
+/* Modificaciones generales */
+
+
+
 *{
     margin: 0;
     padding: 0;
@@ -27,6 +37,35 @@ body::-webkit-scrollbar-thumb{
     background-color: #00ffff;
     border-radius: 10px;
 }
+h1{
+    display: none;
+}
+.hr1{
+    margin: 1vh 0;
+}
+.hr2{
+    width: 90%;
+    margin: 2vh auto;
+}
+.hr3{
+    width: 80%;
+    margin: 2vh auto;
+}
+.hr4{
+    opacity: 30%;
+    width: 80%;
+    margin: 0 auto;
+}
+.hr5{
+    width: 80%;
+    margin: 0 auto 2vh;
+}
+
+
+/* Encabezado */
+
+
+
 header{
     background-image: linear-gradient(90deg, #e0e0e0, #ffffff);
     display: flex;
@@ -45,9 +84,6 @@ header{
     backdrop-filter: blur(1px);
     box-shadow: 0 0 10px #ffffff32;
     border-radius: 10px; */
-}
-h1{
-    display: none;
 }
 #divPerfil{
     display: flex;
@@ -69,18 +105,24 @@ h1{
     border: 2px solid #00000032;
     box-shadow: 0 0 10px #ffffff32;
     border-radius: 100px;
-}
+}    
+
+
+/* Cuerpo de la página */
+
+
+
 main{
     display: flex;
     justify-content: space-between;
     margin-top: 7vh;
-}
-section{
-    display: grid;
-    place-items: center;
-    width: 71vw;
-    transition: width 0.5s ease;
-}
+}    
+
+
+/* Barras laterales conjunto */
+
+
+
 aside{
     height: 93vh;
     position: sticky;
@@ -88,34 +130,22 @@ aside{
     box-shadow: 0px 3px 10px #00000030;
     background-color: #ffffff;
 }
-#aside2{
-    overflow: auto;
-}
-#aside2::-webkit-scrollbar{
-    width: 5px;
-    height: 5px;
-    background-color: #000000;
-}
-#aside2::-webkit-scrollbar-thumb{
-    background-color: #ff8080;
-    border-radius: 10px;
-}
-#aside2 nav{
-    margin: 2vh auto 0;
-    width: 80%;
-    box-sizing: content-box;
-}
-#aside2 nav ul{
-    list-style-type: none;
-}
-#aside2 nav{
-    font-size: 19px;
-    font-weight: bold;
+
+
+/* Barra lateral izquierda conjunto */
+
+
+
+#asides1-3{
+    min-width: 4vw;
+    display: flex;
 }
 
-#aside2 nav i{
-    margin-right: 2%;
-}
+
+/* Barra lateral izquierda expandible */
+
+
+
 .iconmenu{
     font-size: 7vh;
     cursor: pointer;
@@ -164,50 +194,217 @@ aside{
     place-items: center;
 }
 #divAside1Perfil i{
-    font-size: 25px;
+    font-size: 3.9vh;
     margin: 0.5vh 0;
 }
 #divAside1Recientes{
     display: flex;
     flex-direction: column;
     place-items: center;
+    height: 18.4vh;
 }
 #divAside1Pie{
     display: flex;
     flex-direction: column;
     place-items: center;
 }
-#asides1-3{
-    min-width: 4vw;
-    display: flex;
-}
 #aside1{
     max-width: 4vw;
     display: flex;
     flex-direction: column;
 }
+
+
+/* Barra lateral izquierda expandida */
+
+
+
+#aside3{
+    width: 0;
+    overflow: hidden;
+    transition: width 0.5s ease;
+}
+#divAsidePerfil{
+    height: 55.5vh;
+}
+#divAPerfilCabeza{
+    display: flex;
+    min-width: 25vw;
+    place-items: center;
+    flex-direction: column;
+    box-sizing: content-box;
+    padding: 2vh 0;
+}
+#divAPerfilCabeza img{
+    width: 10vw;
+    height: 10vw;
+    border-radius: 100px;
+    margin-bottom: 1vh;
+    border: 2px solid #00000032;
+    box-shadow: 0 0 10px #ffffff32;
+}
+#divAPerfilCabeza h2{
+    position: relative;
+    font-size: 3.7vh;
+}
+#divAPerfilCabeza h2 i{
+    position: absolute;
+    left: -35%;
+    top: 10%;
+}
+#APerfilMenu h3{
+    padding: 0.5vh 0 0.5vh 1vw;
+    font-size: 2.9vh;
+    transition: background-color 0.3s ease;
+}
+#APerfilMenu h3:hover{
+    background-color: #e0e0e0;
+}
+#divAsideRecientes{
+    min-width: 25vw;
+}
+#divAsideRecientes h2{
+    padding: 1vh 0 0.5vh 1vw;
+}
+#divAsideRecientes ul{
+    list-style: none;
+    padding: 1vh 0 0.5vh 1vw;
+}
+#divAsidePie{
+    display: flex;
+    justify-content: space-between;
+    min-width: 25vw;
+}
+
+
+/* Tablero de contenido */
+
+
+
+section{
+    display: grid;
+    place-items: center;
+    width: 71vw;
+    transition: width 0.5s ease;
+}    
+#divPerfiles{
+    transition: box-shadow 0.5s ease;
+    width: 90%;
+    margin: 1rem 0;
+    border-radius: 10px;
+    background-color: #efefef;
+    border: 2px solid #00000032;
+    box-shadow: 0 0 10px #ffffff32;
+}    
+#divPerfiles:hover{
+    box-shadow: 0px 3px 10px #00000030;
+}    
+#divImagenesP{
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    box-sizing: content-box;
+    margin: 1vh auto;
+}    
+#h2Perfiles{
+    font-size: 18px;
+    padding: 5px 0 5px 10px;
+    background-color: #000000;
+    color: #ffffff;
+    box-sizing: content-box;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}    
+#divImagenesP img{
+    width: 7vh;
+    height: 7vh;
+    border-radius: 100px;
+    border: 2px solid #00000032;
+    box-shadow: 0 0 10px #ffffff32;
+}    
+article{
+    transition: box-shadow 0.5s ease;
+    width: 90%;
+    margin: 1rem 0;
+    border-radius: 10px;
+    padding: 0 0 10px;
+    background-color: #efefef;
+    border: 2px solid #00000032;
+    box-shadow: 0 0 10px #ffffff32;
+}    
+article:hover{
+    box-shadow: 0px 3px 10px #00000030;
+}    
+.divArtPerfil{
+    background-color: #000000;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding-left: 1%;
+}    
+.divArtPerfil img{
+    width: 5vh;
+    height: 5vh;
+    border-radius: 100px;
+    margin: 3px 0;
+}    
+.pArtPerfil{
+    margin-left: 5px;
+}    
+.divArtImagen{
+    width: 100%;
+    display: grid;
+    place-items: center;
+    margin: 20px 0;
+}    
+article img{
+    transition: box-shadow 0.5s ease;
+    width: 90%;
+    border-radius: 10px;
+    cursor: pointer;
+}    
+article img:hover{
+    box-shadow: 0px 3px 10px #00000030;
+}    
+article h3, article p{
+    margin: 5px 0 5px 20px;
+}    
+
+
+/* Barra lateral derecha */
+
+
+
 #aside2{
+    overflow: auto;
     width: 25vw;
 }
-.hr1{
-    margin: 1vh 0;
+#aside2::-webkit-scrollbar{
+    width: 5px;
+    height: 5px;
+    background-color: #000000;
 }
-.hr2{
-    width: 90%;
-    margin: 2vh auto;
+#aside2::-webkit-scrollbar-thumb{
+    background-color: #ff8080;
+    border-radius: 10px;
 }
-.hr3{
+#aside2 nav{
+    margin: 2vh auto 0;
     width: 80%;
-    margin: 2vh auto;
+    box-sizing: content-box;
 }
-.hr4{
-    opacity: 30%;
-    width: 80%;
-    margin: 0 auto;
+#aside2 nav ul{
+    list-style-type: none;
 }
-.hr5{
-    width: 80%;
-    margin: 0 auto 2vh;
+#aside2 nav{
+    font-size: 19px;
+    font-weight: bold;
+}
+
+#aside2 nav i{
+    margin-right: 2%;
 }
 #divMensajes{
     width: 80%;
@@ -291,143 +488,4 @@ aside{
 }
 #buttonPubMHelp{
     width: 12%;
-}
-#aside3{
-    width: 0;
-    overflow: hidden;
-    transition: width 0.5s ease;
-}
-#divAsidePerfil{
-    height: 55.5vh;
-}
-#divAPerfilCabeza{
-    display: flex;
-    min-width: 25vw;
-    place-items: center;
-    flex-direction: column;
-    box-sizing: content-box;
-    padding: 2vh 0;
-}
-#divAPerfilCabeza img{
-    width: 10vw;
-    height: 10vw;
-    border-radius: 100px;
-    margin-bottom: 1vh;
-    border: 2px solid #00000032;
-    box-shadow: 0 0 10px #ffffff32;
-}
-#divAPerfilCabeza h2{
-    position: relative;
-}
-#divAPerfilCabeza h2 i{
-    position: absolute;
-    left: -35%;
-    top: 10%;
-}
-#APerfilMenu h3{
-    padding: 0.5vh 0 0.5vh 1vw;
-    font-size: 19px;
-    transition: background-color 0.3s ease;
-}
-#APerfilMenu h3:hover{
-    background-color: #e0e0e0;
-}
-#divAsideRecientes{
-    min-width: 25vw;
-}
-#divAsideRecientes h2{
-    padding: 1vh 0 0.5vh 1vw;
-}
-#divAsideRecientes ul{
-    list-style: none;
-    padding: 1vh 0 0.5vh 1vw;
-}
-#divAsidePie{
-    display: flex;
-    justify-content: space-between;
-    min-width: 25vw;
-}
-#divPerfiles{
-    transition: box-shadow 0.5s ease;
-    width: 90%;
-    margin: 1rem 0;
-    border-radius: 10px;
-    background-color: #efefef;
-    border: 2px solid #00000032;
-    box-shadow: 0 0 10px #ffffff32;
-}
-#divPerfiles:hover{
-    box-shadow: 0px 3px 10px #00000030;
-}
-#divImagenesP{
-    display: flex;
-    justify-content: center;
-    width: 90%;
-    box-sizing: content-box;
-    margin: 1vh auto;
-}
-#h2Perfiles{
-    font-size: 18px;
-    padding: 5px 0 5px 10px;
-    background-color: #000000;
-    color: #ffffff;
-    box-sizing: content-box;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-}
-#divImagenesP img{
-    width: 7vh;
-    height: 7vh;
-    border-radius: 100px;
-    border: 2px solid #00000032;
-    box-shadow: 0 0 10px #ffffff32;
-}
-article{
-    transition: box-shadow 0.5s ease;
-    width: 90%;
-    margin: 1rem 0;
-    border-radius: 10px;
-    padding: 0 0 10px;
-    background-color: #efefef;
-    border: 2px solid #00000032;
-    box-shadow: 0 0 10px #ffffff32;
-}
-article:hover{
-    box-shadow: 0px 3px 10px #00000030;
-}
-.divArtPerfil{
-    background-color: #000000;
-    color: #ffffff;
-    display: flex;
-    align-items: center;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    padding-left: 1%;
-}
-.divArtPerfil img{
-    width: 5vh;
-    height: 5vh;
-    border-radius: 100px;
-    margin: 3px 0;
-}
-.pArtPerfil{
-    margin-left: 5px;
-}
-.divArtImagen{
-    width: 100%;
-    display: grid;
-    place-items: center;
-    margin: 20px 0;
-}
-article img{
-    transition: box-shadow 0.5s ease;
-    width: 90%;
-    border-radius: 10px;
-    cursor: pointer;
-}
-article img:hover{
-    box-shadow: 0px 3px 10px #00000030;
-}
-article h3, article p{
-    margin: 5px 0 5px 20px;
 }
