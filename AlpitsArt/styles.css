@@ -60,6 +60,10 @@ h1{
     width: 80%;
     margin: 0 auto 2vh;
 }
+.hr6{
+    width: 90%;
+    margin: 2vh auto 0;
+}
 
 
 /* Encabezado */
@@ -79,26 +83,20 @@ header{
 }
 #imgAlpits{
     margin-left: 20px;
-    /* background-color: transparent;
-    border: 2px solid #00000032;
-    backdrop-filter: blur(1px);
-    box-shadow: 0 0 10px #ffffff32;
-    border-radius: 10px; */
 }
-#divPerfil{
+#Header-Perfil{
     display: flex;
     justify-content: space-between;
     align-items: center;
     box-sizing: content-box;
-    /* background-image: linear-gradient(90deg, #9500ff, #09f, #00ddff); */
     border-radius: 10px;
 }
-#divPerfilText{
+#Header-Perfil p{
     margin-left: 10px;
     font-size: 14px;
     font-weight: bold;
 }
-#divPerfil img{
+#Header-Perfil img{
     width: 7vh;
     height: 7vh;
     margin: 0 5px 0 10px;
@@ -136,7 +134,7 @@ aside{
 
 
 
-#asides1-3{
+#Aside-1-3{
     min-width: 4vw;
     display: flex;
 }
@@ -146,6 +144,11 @@ aside{
 
 
 
+#Aside-1{
+    max-width: 4vw;
+    display: flex;
+    flex-direction: column;
+}
 .iconmenu{
     font-size: 7vh;
     cursor: pointer;
@@ -157,7 +160,7 @@ aside{
     margin-top: 2vh;
     font-size: 2.5vh;
 }
-#divAside1Menu{
+#Aside-1-Menu{
     display: flex;
     flex-direction: column;
     place-items: center;
@@ -165,22 +168,26 @@ aside{
     height: 7vh;
     overflow: hidden;
 }
-#divAside1Menu:hover{
+#Aside-1-Menu:hover{
     background-color: #e0e0e0;
 }
-#divAside1Perfil{
+#Aside-1-Perfil{
     display: flex;
     flex-direction: column;
     place-items: center;
     height: 46.2vh;
 }
-#divA1PerfilCabeza{
+#Aside-1-Perfil i{
+    font-size: 3.9vh;
+    margin: 0.5vh 0;
+}
+#Aside-1-Perfil-Cabeza{
     display: flex;
     flex-direction: column;
     place-items: center;
     height: 21.5vh;
 }
-#divA1PerfilCabeza img{
+#Aside-1-Perfil-Cabeza img{
     width: 4vw;
     height: 4vw;
     border-radius: 100px;
@@ -188,30 +195,21 @@ aside{
     box-shadow: 0 0 10px #ffffff32;
     margin-bottom: 6.2vh;
 }
-#divA1PerfilMenu{
+#Aside-1-Perfil-Menu{
     display: flex;
     flex-direction: column;
     place-items: center;
 }
-#divAside1Perfil i{
-    font-size: 3.9vh;
-    margin: 0.5vh 0;
-}
-#divAside1Recientes{
+#Aside-1-Recientes{
     display: flex;
     flex-direction: column;
     place-items: center;
     height: 18.4vh;
 }
-#divAside1Pie{
+#Aside-1-Pie{
     display: flex;
     flex-direction: column;
     place-items: center;
-}
-#aside1{
-    max-width: 4vw;
-    display: flex;
-    flex-direction: column;
 }
 
 
@@ -219,15 +217,15 @@ aside{
 
 
 
-#aside3{
+#Aside-2{
     width: 0;
     overflow: hidden;
     transition: width 0.5s ease;
 }
-#divAsidePerfil{
+#Aside-2-Perfil{
     height: 55.5vh;
 }
-#divAPerfilCabeza{
+#Aside-2-Perfil-Cabeza{
     display: flex;
     min-width: 25vw;
     place-items: center;
@@ -235,42 +233,42 @@ aside{
     box-sizing: content-box;
     padding: 2vh 0;
 }
-#divAPerfilCabeza img{
-    width: 10vw;
-    height: 10vw;
+#Aside-2-Perfil-Cabeza img{
+    width: 21.3vh;
+    height: 21.3vh;
     border-radius: 100px;
     margin-bottom: 1vh;
     border: 2px solid #00000032;
     box-shadow: 0 0 10px #ffffff32;
 }
-#divAPerfilCabeza h2{
+#Aside-2-Perfil-Cabeza h2{
     position: relative;
     font-size: 3.7vh;
 }
-#divAPerfilCabeza h2 i{
+#Aside-2-Perfil-Cabeza h2 i{
     position: absolute;
     left: -35%;
     top: 10%;
 }
-#APerfilMenu h3{
+#Aside-2-Perfil-Menu h3{
     padding: 0.5vh 0 0.5vh 1vw;
     font-size: 2.9vh;
     transition: background-color 0.3s ease;
 }
-#APerfilMenu h3:hover{
+#Aside-2-Perfil-Menu h3:hover{
     background-color: #e0e0e0;
 }
-#divAsideRecientes{
+#Aside-2-Recientes{
     min-width: 25vw;
 }
-#divAsideRecientes h2{
+#Aside-2-Recientes h2{
     padding: 1vh 0 0.5vh 1vw;
 }
-#divAsideRecientes ul{
+#Aside-2-Recientes ul{
     list-style: none;
     padding: 1vh 0 0.5vh 1vw;
 }
-#divAsidePie{
+#Aside-2-Pie{
     display: flex;
     justify-content: space-between;
     min-width: 25vw;
@@ -287,7 +285,7 @@ section{
     width: 71vw;
     transition: width 0.5s ease;
 }    
-#divPerfiles{
+#Section-Perfiles{
     transition: box-shadow 0.5s ease;
     width: 90%;
     margin: 1rem 0;
@@ -296,17 +294,10 @@ section{
     border: 2px solid #00000032;
     box-shadow: 0 0 10px #ffffff32;
 }    
-#divPerfiles:hover{
+#Section-Perfiles:hover{
     box-shadow: 0px 3px 10px #00000030;
 }    
-#divImagenesP{
-    display: flex;
-    justify-content: center;
-    width: 90%;
-    box-sizing: content-box;
-    margin: 1vh auto;
-}    
-#h2Perfiles{
+#Section-Perfiles h2{
     font-size: 18px;
     padding: 5px 0 5px 10px;
     background-color: #000000;
@@ -315,7 +306,14 @@ section{
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }    
-#divImagenesP img{
+#Section-Perfiles-Imagenes{
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    box-sizing: content-box;
+    margin: 1vh auto;
+}    
+#Section-Perfiles-Imagenes img{
     width: 7vh;
     height: 7vh;
     border-radius: 100px;
@@ -335,7 +333,7 @@ article{
 article:hover{
     box-shadow: 0px 3px 10px #00000030;
 }    
-.divArtPerfil{
+.Section-Article-Perfil{
     background-color: #000000;
     color: #ffffff;
     display: flex;
@@ -344,32 +342,32 @@ article:hover{
     border-top-right-radius: 10px;
     padding-left: 1%;
 }    
-.divArtPerfil img{
+.Section-Article-Perfil img{
     width: 5vh;
     height: 5vh;
     border-radius: 100px;
     margin: 3px 0;
 }    
-.pArtPerfil{
+.Section-Article-Perfil p{
     margin-left: 5px;
 }    
-.divArtImagen{
+.Section-Article-Contenido h3, .Section-Article-Contenido p{
+    margin: 5px 0 5px 20px;
+}    
+.Section-Article-Contenido-Imagenes{
     width: 100%;
     display: grid;
     place-items: center;
     margin: 20px 0;
 }    
-article img{
+.Section-Article-Contenido-Imagenes img{
     transition: box-shadow 0.5s ease;
     width: 90%;
     border-radius: 10px;
     cursor: pointer;
 }    
-article img:hover{
+.Section-Article-Contenido-Imagenes img:hover{
     box-shadow: 0px 3px 10px #00000030;
-}    
-article h3, article p{
-    margin: 5px 0 5px 20px;
 }    
 
 
@@ -377,115 +375,137 @@ article h3, article p{
 
 
 
-#aside2{
-    overflow: auto;
+#Aside-3{
+    overflow: hidden;
     width: 25vw;
 }
-#aside2::-webkit-scrollbar{
+#Aside-3::-webkit-scrollbar{
     width: 5px;
     height: 5px;
     background-color: #000000;
 }
-#aside2::-webkit-scrollbar-thumb{
+#Aside-3::-webkit-scrollbar-thumb{
     background-color: #ff8080;
     border-radius: 10px;
 }
-#aside2 nav{
+#Aside-3 nav{
     margin: 2vh auto 0;
     width: 80%;
     box-sizing: content-box;
 }
-#aside2 nav ul{
+#Aside-3 nav ul{
     list-style-type: none;
 }
-#aside2 nav{
-    font-size: 19px;
+#Aside-3 nav{
+    font-size: 3vh;
     font-weight: bold;
 }
 
-#aside2 nav i{
+#Aside-3 nav i{
     margin-right: 2%;
 }
-#divMensajes{
+#Aside-3-Anuncios{
+    height: 0;
+    width: 100%;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+    transition: height 0.5s ease;
+    margin-top: 2vh;
+}
+#Aside-3-Anuncios img{
+    width: 80%;
+}
+#Aside-3-Mensajes{
     width: 80%;
     margin: 0 auto 1vh;
+    margin-top: 2vh;
 }
-#divMensajes h2{
-    font-size: 100%;
+#Aside-3-Mensajes-Cabeza{
+    cursor: pointer;
+}
+#Aside-3-Mensajes-Cabeza h2{
+    font-size: 3vh;
     text-align: center;
     background-color: #000000;
     color: #ffffff;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     box-sizing: content-box;
-    padding: 0.5vh 0;
+    padding: 0.7vh 0;
 }
-#divCajaM{
+#Aside-3-Mensajes-Cuerpo{
+    overflow: hidden;
+    transition: height 0.5s ease;
+    height: 46.5vh;
+}
+#Aside-3-Mensajes-Cuerpo-Caja{
     background-color: #ffffff;
-    border: 2px solid #00000032;
+    border: 0.4vh solid #00000032;
     box-shadow: 0 0 10px #00000032;
     width: 100%;
     display: flex;
     place-items: center;
     flex-direction: column;
-    height: 41vh;
+    min-height: 41vh;
+    max-height: 41vh;
     border-bottom-left-radius: 10px;
     overflow: auto;
 }
-#divCajaM::-webkit-scrollbar{
-    width: 5px;
-    height: 5px;
+#Aside-3-Mensajes-Cuerpo-Caja::-webkit-scrollbar{
+    width: 0.3vw;
+    height: 0.3vh;
     background-color: #000000;
 }
-#divCajaM::-webkit-scrollbar-thumb{
+#Aside-3-Mensajes-Cuerpo-Caja::-webkit-scrollbar-thumb{
     background-color: #00ff80;
     border-radius: 10px;
 }
-.divMensaje{
+.Aside-3-Mensajes-Cuerpo-Caja-Mensaje{
     width: 90%;
     display: flex;
     margin: 0.5vh 0;
 }
-.divMensaje img{
+.Aside-3-Mensajes-Cuerpo-Caja-Mensaje img{
     width: 5vh;
     height: 5vh;
-    margin-right: 5px;
+    margin-right: 2%;
     border-radius: 100px;
-    border: 2px solid #00000032;
+    border: 0.4vh solid #00000032;
     box-shadow: 0 0 10px #ffffff32;
 }
-.divMensaje p{
+.Aside-3-Mensajes-Cuerpo-Caja-Mensaje p{
     box-sizing: content-box;
     padding: 1vh;
     font-size: 2vh;
     background-color: #eeeeee;
     border-radius: 10px;
 }
-.divMensaje a{
+.Aside-3-Mensajes-Cuerpo-Caja-Mensaje a{
     text-decoration: none;
     color: #ff00ff;
     font-weight: bold;
 }
-.divMensaje a:active{
+.Aside-3-Mensajes-Cuerpo-Caja-Mensaje a:active{
     color: #00ff80;
 }
-#divBotones{
+#Aside-3-Mensajes-CuerpoBotones{
     display: flex;
     justify-content: space-between;
 }
-#divBotones button{
+#Aside-3-Mensajes-Cuerpo-Botones button{
     height: 5vh;
     background-color: #000000;
     border: none;
     border-radius: 10px;
     color: #ffffff;
-    font-size: 100%;
-    margin-top: 5px;
+    font-size: 2.5vh;
+    margin-top: 0.5vh;
     cursor: pointer;
 }
-#buttonPubM{
+#Aside-3-Mensajes-Cuerpo-Botones-Compartir{
     width: 85%;
 }
-#buttonPubMHelp{
+#Aside-3-Mensajes-Cuerpo-Botones-Ayuda{
     width: 12%;
 }
