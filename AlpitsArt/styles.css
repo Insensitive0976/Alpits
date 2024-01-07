@@ -330,20 +330,22 @@ section{
     transition: width 0.5s ease;
 }    
 #Section-Perfiles{
+    font-size: 0.47vw;
     transition: box-shadow 0.5s ease;
     width: 90%;
-    margin: 1rem 0;
+    margin: 2.5vh 0 2.5em;
     border-radius: 10px;
     background-color: #efefef;
     border: 2px solid #00000032;
-    box-shadow: 0 0 10px #ffffff32;
+    box-shadow: 0 0 1.57em #ffffff32;
+    transition: font-size 0.5s ease;
 }    
 #Section-Perfiles:hover{
-    box-shadow: 0px 3px 10px #00000030;
+    box-shadow: 0px 3px 1.57em #00000030;
 }    
 #Section-Perfiles h2{
-    font-size: 18px;
-    padding: 5px 0 5px 10px;
+    font-size: 2.5em;
+    padding: 0.312em 0 0.312em 0.624em;
     background-color: #000000;
     color: #ffffff;
     box-sizing: content-box;
@@ -355,27 +357,29 @@ section{
     justify-content: center;
     width: 90%;
     box-sizing: content-box;
-    margin: 1vh auto;
+    margin: 1em auto;
 }    
 #Section-Perfiles-Imagenes img{
-    width: 7vh;
-    height: 7vh;
+    width: 7em;
+    height: 7em;
     border-radius: 100px;
     border: 2px solid #00000032;
-    box-shadow: 0 0 10px #ffffff32;
+    box-shadow: 0 0 1.57em #ffffff32;
 }    
 article{
+    font-size: 0.47vw;
     transition: box-shadow 0.5s ease;
     width: 90%;
-    margin: 1rem 0;
+    margin: 2.5em 0;
     border-radius: 10px;
-    padding: 0 0 10px;
+    padding: 0 0 1.57em;
     background-color: #efefef;
     border: 2px solid #00000032;
-    box-shadow: 0 0 10px #ffffff32;
+    box-shadow: 0 0 1.57em #ffffff32;
+    transition: font-size 0.5s ease;
 }    
 article:hover{
-    box-shadow: 0px 3px 10px #00000030;
+    box-shadow: 0px 3px 1.57em #00000030;
 }    
 .Section-Article-Perfil{
     background-color: #000000;
@@ -387,16 +391,16 @@ article:hover{
     padding-left: 1%;
 }    
 .Section-Article-Perfil img{
-    width: 6vh;
-    height: 6vh;
+    width: 6em;
+    height: 6em;
     border-radius: 100px;
-    border: 0.4vh solid #ffffff32;
-    box-shadow: 0 0 10px #ffffff32;
-    margin: 0.2vh 0;
+    border: 0.4em solid #ffffff32;
+    box-shadow: 0 0 1.57em #ffffff32;
+    margin: 0.2em 0;
 }    
 .Section-Article-Perfil p{
     margin-left: 0.7vw;
-    font-size: 2.5vh;
+    font-size: 2.5em;
 }
 .Section-Article-Contenido-Imagenes{
     width: 100%;
@@ -409,46 +413,49 @@ article:hover{
     cursor: pointer;
 }    
 .Section-Article-Contenido-Imagenes img:hover{
-    box-shadow: 0px 3px 10px #00000030;
+    box-shadow: 0px 3px 1.57em #00000030;
 }
 .Section-Article-Contenido h3{
-    font-size: 4vh;
-    margin: 1.5vh 0 1vh 1vw;
+    font-size: 4em;
+    margin: 0.375em 1vw 0.25em;
 }
 .Section-Article-Contenido-Subtitulo{
-    font-size: 3vh;
-    margin: 1vh 0 2vh 1vw;
+    font-size: 3em;
+    margin: 0.333em 1vw 0.666em;
 }
 .Section-Article-Contenido-Descripcion{
-    margin: 2vh 0;
+    margin: 2em 0;
 }
 .Section-Article-Contenido-Descripcion p{
-    font-size: 2.5vh;
-    margin: 1vh 0 1vh 1vw;
+    font-size: 2.5em;
+    margin: 0.375em 1vw;
 }
 .Section-Article-Contenido-Pie{
     display: flex;
     justify-content: space-between;
-    margin: 1vh 1vw 0;
+    margin: 1em 1vw 0;
 }
 .Section-Article-Contenido-Pie p{
     color: #a0a0a0;
-    font-size: 2vh;
+    font-size: 2em;
 }
 #Section-ArticuloFinal{
+    font-size: 0.47vw;
     transition: box-shadow 0.5s ease;
     width: 90%;
-    margin: 1rem 0;
+    margin: 2.5em 0;
     border-radius: 10px;
-    padding: 1vh 0;
+    padding: 1em 0;
     background-color: #000000;
     border: 2px solid #00000032;
-    box-shadow: 0 0 10px #ffffff32;
+    box-shadow: 0 0 1.57em #ffffff32;
+    transition: font-size 0.5s ease;
 }
 #Section-ArticuloFinal:hover{
-    box-shadow: 0px 3px 10px #00000030;
+    box-shadow: 0px 3px 1.57em #00000030;
 }
 #Section-ArticuloFinal p{
+    font-size: 2.4em;
     text-align: center;
     color: #ffffff;
 }

@@ -2,17 +2,27 @@ let imenu = document.getElementById('IconMenu')
 let section = document.querySelector('section')
 
 imenu.onclick = function(){
+    let aside2 = document.getElementById('Aside-2')
     let widthA = 0
     let widthS = '46vw'
-    let aside2 = document.getElementById('Aside-2')
+    let sectionperfiles = document.getElementById('Section-Perfiles')
+    let sectionarticles = document.querySelectorAll('article')
+    let sectionfinal = document.getElementById('Section-ArticuloFinal')
+    let fontArt = '0.37vw'
     if(aside2.clientWidth == '0'){
         widthA=aside2.scrollWidth;
     }
     else{
         widthS='71vw'
+        fontArt='0.47vw'
     }
     aside2.style.width = widthA+'px';
     section.style.width = widthS;
+    sectionperfiles.style.fontSize = fontArt
+    sectionarticles.forEach(article => {
+        article.style.fontSize = fontArt;
+    });
+    sectionfinal.style.fontSize = fontArt
 }
 
 let mensajescabeza = document.getElementById('Aside-3-Mensajes-Cabeza')
