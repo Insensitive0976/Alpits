@@ -53,9 +53,10 @@ h1{
     margin: 2vh auto;
 }
 .hr4{
-    opacity: 30%;
     width: 80%;
     margin: 0 auto;
+    background-color: #00000020;
+    height: 0.16vh;
 }
 .hr5{
     width: 80%;
@@ -72,7 +73,8 @@ h1{
 .hr8{
     width: 95%;
     margin: 0 auto;
-    opacity: 30%;
+    background-color: #00000020;
+    height: 0.16em;
 }
 
 
@@ -234,15 +236,15 @@ aside{
 
 #Aside-2{
     width: 0;
-    overflow: hidden;
+    overflow-y: hidden;
+    overflow-x: hidden;
     transition: width 0.5s ease;
 }
 #Aside-2-Perfil{
-    height: 55.5vh;
+    min-width: 25vw;    
 }
 #Aside-2-Perfil-Cabeza{
     display: flex;
-    min-width: 25vw;
     place-items: center;
     flex-direction: column;
     box-sizing: content-box;
@@ -265,13 +267,50 @@ aside{
     left: -35%;
     top: 10%;
 }
-#Aside-2-Perfil-Menu h3{
-    padding: 0.5vh 0 0.5vh 1vw;
-    font-size: 2.9vh;
-    transition: background-color 0.3s ease;
+#Aside-2-Perfil-Menu ul{
+    list-style: none;
 }
-#Aside-2-Perfil-Menu h3:hover{
+.Aside-2-Perfil-Menu-Elemento-Titulo{
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    padding: 0.5vh 4% 0.5vh 4%;
+    transition: color 0.5s ease, background-color 0.5s ease, border-radius 0.5s ease;
+}
+.Aside-2-Perfil-Menu-Elemento-Titulo:hover{
     background-color: #e0e0e0;
+}
+.Aside-2-Perfil-Menu-Elemento-Titulo h3{
+    font-size: 3vh;
+}
+.Aside-2-Perfil-Menu-Elemento-Titulo i{
+    font-size: 3.7vh;
+    margin: 0 0 0 auto;
+    transition: transform 0.5s ease;
+}
+.rotacion i{
+    transform: rotate(-90deg);
+}
+.Aside-2-Perfil-Menu-Elemento-Espacio{
+    height: 0;
+    transition: height 0.5s ease;
+
+}
+.Aside-2-Perfil-Menu-Elemento-Contenedor{
+    position: fixed;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    background-color: #ffffff;
+    box-shadow: 0 0 1.57vh #00000030;
+    transition: width 0.5s ease, height 0.5s ease;
+}
+.Aside-2-Perfil-Menu-Elemento-Contenedor-Contenido{
+    padding: 7vh 1vw;
+    width: 71vw;
+}
+.Aside-2-Perfil-Menu-Elemento-Contenedor-Contenido p{
+    text-align: center;
 }
 #Aside-2-Recientes{
     min-width: 25vw;
@@ -503,7 +542,7 @@ article:hover{
     border-radius: 10px;
     background-color: #d0d0d0;
 }
-#Aside-3-Anuncios{
+#Aside-3-ContenedorAnuncios{
     height: 0;
     width: 100%;
     display: grid;
@@ -512,7 +551,7 @@ article:hover{
     transition: height 0.5s ease;
     margin-top: 2vh;
 }
-#Aside-3-Anuncios img{
+#Aside-3-ContenedorAnuncios img{
     width: 80%;
 }
 #Aside-3-Mensajes{
