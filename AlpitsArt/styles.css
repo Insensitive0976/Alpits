@@ -21,12 +21,12 @@
     font-family: 'Montserrat';
 }
 body{
-    background-color: #efefef;
-    background-image: url(imgs/background.jpg);
+    background-color: #e0e0e0;
+    /* background-image: url(imgs/background.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    background-attachment: fixed;
+    background-attachment: fixed; */
 }
 body::-webkit-scrollbar{
     width: 5px;
@@ -343,18 +343,35 @@ aside{
 #Aside-2-Recientes ul li a:active{
     color: #ff00ff;
 }
-#Aside-2-Pie{
+#Aside-2-MasInformacion{
+    display: flex;
+    width: 25vw;
+}
+#Aside-2-MasInformacion-Titulo{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    min-width: 25vw;
-    margin-top: 1vh;
+    width: 25vw;
+    height: 7vh;
+    cursor: pointer;
+    /* background-image: url(imgs/finbarra.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; */
 }
-#Aside-2-Pie h2{
-    margin-left: 1vw;
+#Aside-2-MasInformacion-Titulo:hover{
+    background-color: #e0e0e0;
 }
-#Aside-2-Pie i{
-    margin-right: 1vw;
+#Aside-2-MasInformacion-Titulo i{
+    font-size: 3.7vh;
+}
+#Aside-2-MasInformacion-Contenedor{
+    position: fixed;
+    left: 29vw;
+    overflow: hidden;
+    background-color: #ffffff;
+    width: 0;
+    transition: width 0.5s ease;
 }
 
 
@@ -363,25 +380,78 @@ aside{
 
 
 section{
-    display: grid;
-    place-items: center;
     width: 71vw;
     transition: width 0.5s ease;
-}    
-#Section-Perfiles{
+}
+.SeccionDisponible{
+    display: none;
+    width: 100%;
+}
+.SeccionActiva{
+    display: block;
+}
+.SeccionTamañoModificable{
     font-size: 0.47vw;
+    transition: font-size 0.3s ease;
+}
+.Section-Seccion-Aviso{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000000;
+    color: #ffffff;
+    padding: 0 0.5em;
+    height: 3vh;
+    font-size: 2em;
+    overflow: hidden;
+    transition: height 0.5s ease;
+}
+.Section-Seccion-Aviso-X{
+    cursor: pointer;
+}
+.Section-Seccion-Contenedor-Ausencia{
+    display: grid;
+    place-items: center;
+    height: 90vh;
+}
+.Section-Seccion-Contenedor-Ausencia div{
+    color: #b0b0b0;
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    height: 25vh;
+}
+.Section-Seccion-Contenedor-Ausencia p{
+    font-size: 3vh;
+    margin-top: 1vh;
+    text-align: center;
+}
+.Section-Seccion-Contenedor-Ausencia i{
+    font-size: 20vh;
+}
+#Section-Todo-Contenedor{
+    display: grid;
+    place-items: center;
+    width: 100%;
+}
+#Section-Novedades-Contenedor{
+    display: grid;
+    place-items: center;
+    width: 100%;
+}
+.Section-Seccion-Perfiles{
     width: 90%;
     margin: 2.5vh 0 2.5em;
     border-radius: 10px;
-    background-color: #efefef;
+    background-color: #f9f9f9;
     border: 2px solid #00000032;
     box-shadow: 0 0 1.57em #ffffff32;
-    transition: box-shadow 0.5s ease, font-size 0.5s ease;
+    transition: box-shadow 0.5s ease;
 }    
-#Section-Perfiles:hover{
+.Section-Seccion-Perfiles:hover{
     box-shadow: 0px 3px 1.57em #00000030;
 }    
-#Section-Perfiles h2{
+.Section-Seccion-Perfiles h2{
     font-size: 2.5em;
     padding: 0.312em 0 0.312em 0.624em;
     background-color: #000000;
@@ -390,14 +460,14 @@ section{
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }    
-#Section-Perfiles-Imagenes{
+.Section-Seccion-Perfiles-Imagenes{
     display: flex;
     justify-content: center;
     width: 90%;
     box-sizing: content-box;
     margin: 1em auto;
 }    
-#Section-Perfiles-Imagenes img{
+.Section-Seccion-Perfiles-Imagenes img{
     width: 7em;
     height: 7em;
     border-radius: 100px;
@@ -405,15 +475,14 @@ section{
     box-shadow: 0 0 1.57em #ffffff32;
 }    
 article{
-    font-size: 0.47vw;
     width: 90%;
     margin: 2.5em 0;
     border-radius: 10px;
     padding: 0 0 1.57em;
-    background-color: #efefef;
+    background-color: #f9f9f9;
     border: 2px solid #00000032;
     box-shadow: 0 0 1.57em #ffffff32;
-    transition: box-shadow 0.5s ease, font-size 0.5s ease;
+    transition: box-shadow 0.5s ease;
 }    
 article:hover{
     box-shadow: 0px 3px 1.57em #00000030;
@@ -476,8 +545,7 @@ article:hover{
     color: #a0a0a0;
     font-size: 2em;
 }
-#Section-ArticuloFinal{
-    font-size: 0.47vw;
+.Section-Seccion-Contenido-AvisoFinal{
     width: 90%;
     margin: 2.5em 0;
     border-radius: 10px;
@@ -485,12 +553,12 @@ article:hover{
     background-color: #000000;
     border: 2px solid #00000032;
     box-shadow: 0 0 1.57em #ffffff32;
-    transition: box-shadow 0.5s ease, font-size 0.5s ease;
+    transition: box-shadow 0.5s ease;
 }
-#Section-ArticuloFinal:hover{
+.Section-Seccion-Contenido-AvisoFinal:hover{
     box-shadow: 0px 3px 1.57em #00000030;
 }
-#Section-ArticuloFinal p{
+.Section-Seccion-Contenido-AvisoFinal p{
     font-size: 2.4em;
     text-align: center;
     color: #ffffff;
@@ -532,15 +600,23 @@ article:hover{
     width: 90%;
     margin: 0 auto;
 }
-#Aside-3 nav ul li{
+.Aside-3-Nav-Selector{
     padding-left: 1.2vw;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 10px;
+}
+.Aside-3-Nav-Selector:hover{
+    background-color: #e0e0e0;
+}
+.SelectorActivo{
+    background-color: #d0d0d0;
+}
+.SelectorActivo:hover{
+    background-color: #c0c0c0;
 }
 #Aside-3 nav i{
     margin-right: 2%;
-}
-#Aside-3-Nav-Novedades{
-    border-radius: 10px;
-    background-color: #d0d0d0;
 }
 #Aside-3-ContenedorAnuncios{
     height: 0;

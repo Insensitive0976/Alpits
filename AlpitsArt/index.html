@@ -81,7 +81,7 @@
                 <hr class="hr7">
 
                 <div id="Aside-1-Pie">
-                    <i class='bx bxs-info-circle'></i>
+                    <i class='bx bxl-sketch'></i>
                 </div>
 
 
@@ -255,24 +255,33 @@
                     <h2>Recientes</h2>
 
                     <ul>
-                        <li><a href="#Art000000002">- Novedades v 0.4.1</a></li>
-                        <li><a href="#Art000000001">- Novedades v 0.4</a></li>
-                        <li><a href="#Section-ArticuloFinal">- --------------------</a></li>
-                        <li><a href="#Section-ArticuloFinal">- --------------------</a></li>
-                        <li><a href="#Section-ArticuloFinal">- --------------------</a></li>
-                        <li><a href="#Section-ArticuloFinal">- --------------------</a></li>
-                        <li><a href="#Section-ArticuloFinal">- --------------------</a></li>
+                        <li><a class="SelecNovedades" href="#Art000000003">- Novedades v 0.5.0</a></li>
+                        <li><a class="SelecNovedades" href="#Art000000002">- Novedades v 0.4.1</a></li>
+                        <li><a class="SelecNovedades" href="#Art000000001">- Novedades v 0.4</a></li>
+                        <li><a class="SelecTodo" href="#Section-Todo-Contenido-AvisoFinal">- --------------------</a></li>
+                        <li><a class="SelecTodo" href="#Section-Todo-Contenido-AvisoFinal">- --------------------</a></li>
+                        <li><a class="SelecTodo" href="#Section-Todo-Contenido-AvisoFinal">- --------------------</a></li>
+                        <li><a class="SelecTodo" href="#Section-Todo-Contenido-AvisoFinal">- --------------------</a></li>
                     </ul>
 
                 </div>
 
                 <hr>
 
-                <div id="Aside-2-Pie">
+                <div id="Aside-2-MasInformacion">
 
-                    <h2>Pie de página</h2>
+                    <div id="Aside-2-MasInformacion-Titulo">
 
-                    <i class='bx bxs-chevron-down'></i>
+
+
+                    </div>
+
+                    <div id="Aside-2-MasInformacion-Contenedor">
+
+                        <p>Contacto</p>
+
+                    </div>
+
 
                 </div>
 
@@ -282,119 +291,487 @@
 
         <section>
 
-            <div id="Section-Perfiles">
+            <div data-content id="Section-Inicio" class="SeccionDisponible">
 
-                <h2>Publicaciones de:</h2>
+                <div id="Section-Inicio-Contenedor">
 
-                <div id="Section-Perfiles-Imagenes">
-                    <img src="imgs/insensitive09.jpg" alt="Profile" title="Insensitive09">
+                    
+                    
                 </div>
 
             </div>
 
-            <article id="Art000000002">
+            <div data-content id="Section-Publico" class="SeccionDisponible SeccionTamañoModificable">
 
-                <div class="Section-Article-Perfil">
+                <div class="Section-Seccion-Aviso">
 
-                    <img src="imgs/insensitive09.jpg" alt="Profile" title="Insensitive09">
+                    <i class='bx bx-x Section-Seccion-Aviso-X'></i>
+                    <p class="Section-Seccion-Aviso-Aviso">Ahora te encuentras en la sección "Público".</p>
+                    <i class='bx bx-x Section-Seccion-Aviso-X'></i>
+                        
+                </div>
+            
+                <div id="Section-Publico-Contenedor">
 
-                    <p>Insensitive09</p>
+                    <div class="Section-Seccion-Contenedor-Ausencia">
+                        <div>
+                            <i class='bx bxs-lock-open-alt'></i>
+                            <p>En camino...</p>
+                        </div>
+                    </div>
+                    
+                </div>
+
+            </div>
+
+            <div data-content id="Section-Todo" class="SeccionDisponible SeccionTamañoModificable">
+
+                <div class="Section-Seccion-Aviso">
+
+                    <i class='bx bx-x Section-Seccion-Aviso-X'></i>
+                    <p class="Section-Seccion-Aviso-Aviso">Ahora te encuentras en la sección "Todo".</p>
+                    <i class='bx bx-x Section-Seccion-Aviso-X'></i>
+                        
+                </div>
+            
+                <div id="Section-Todo-Contenedor">
+
+                    <div class="Section-Seccion-Perfiles">
+
+                        <h2>Publicaciones de:</h2>
+
+                        <div class="Section-Seccion-Perfiles-Imagenes">
+                            <img src="imgs/insensitive09.jpg" alt="Profile" title="Insensitive09">
+                        </div>
+
+                    </div>
+
+                    <article>
+
+                        <div class="Section-Article-Perfil">
+
+                            <img src="imgs/insensitive09.jpg" alt="Profile" title="Insensitive09">
+
+                            <p>Insensitive09</p>
+
+                        </div>
+
+                        <div class="Section-Article-Contenido">
+
+                            <div class="Section-Article-Contenido-Imagenes">
+
+                                <a href="imgs/a3.jpeg" target="_blank"><img src="imgs/a3.jpeg" alt="Imagen artículo" title="Art Image"></a>
+
+                            </div>
+
+                            <h3>Novedades v 0.5</h3>
+
+                            <p class="Section-Article-Contenido-Subtitulo">Cambio de secciones</p>
+
+                            <div class="hr8"></div>
+
+                            <div class="Section-Article-Contenido-Descripcion">
+
+                                <p>Cambios:</p>
+                                <p>- Habilitado el cambio de secciones desde la barra lateral derecha.</p>
+                                <p>- Ahora se pueden abrir las opciones en el menú del perfil.</p>
+                                <p>- Los enlaces de "Recientes" pueden llevar a la sección correspondiente de su publicación.</p>
+                                <p>- Añadido un aviso en la parte superior de cada sección.</p>
+                                <p>- Se ha removido el fondo de la página (temporalmente).</p>
+                                <p>- Eliminada la opción "Pie de Página".</p>
+                                <p>- Se ha organizado el código JS</p>
+                                <br>
+                                <p>Más modificaciones en camino.</p>
+
+                            </div>
+
+                            <div class="hr8"></div>
+
+                            <div class="Section-Article-Contenido-Pie">
+
+                                <p>20:00 UTC-5</p>
+                                <p>10/01/2024</p>
+                                <p>Art #000000003</p>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                    <article>
+
+                        <div class="Section-Article-Perfil">
+
+                            <img src="imgs/insensitive09.jpg" alt="Profile" title="Insensitive09">
+
+                            <p>Insensitive09</p>
+
+                        </div>
+
+                        <div class="Section-Article-Contenido">
+
+                            <div class="Section-Article-Contenido-Imagenes">
+
+                                <a href="imgs/a2.jpeg" target="_blank"><img src="imgs/a2.jpeg" alt="Imagen artículo" title="Art Image"></a>
+
+                            </div>
+
+                            <h3>Novedades v 0.4.1</h3>
+
+                            <p class="Section-Article-Contenido-Subtitulo">Retoque de tamaño</p>
+
+                            <div class="hr8"></div>
+
+                            <div class="Section-Article-Contenido-Descripcion">
+
+                                <p>Cambios:</p>
+                                <p>- La sección de publicaciones ahora cambia totalmente su tamaño al pulsar el botón de menú.</p>
+                                <br>
+                                <p>Más modificaciones en camino.</p>
+
+                            </div>
+
+                            <div class="hr8"></div>
+
+                            <div class="Section-Article-Contenido-Pie">
+
+                                <p>2:41 UTC-5</p>
+                                <p>7/01/2024</p>
+                                <p>Art #000000002</p>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                    <article>
+
+                        <div class="Section-Article-Perfil">
+
+                            <img src="imgs/insensitive09.jpg" alt="Profile" title="Insensitive09">
+
+                            <p>Insensitive09</p>
+
+                        </div>
+
+                        <div class="Section-Article-Contenido">
+
+                            <div class="Section-Article-Contenido-Imagenes">
+
+                                <a href="imgs/a1.jpeg" target="_blank"><img src="imgs/a1.jpeg" alt="Imagen artículo" title="Art Image"></a>
+
+                            </div>
+
+                            <h3>Novedades v 0.4</h3>
+
+                            <p class="Section-Article-Contenido-Subtitulo">Actualización de orden</p>
+
+                            <div class="hr8"></div>
+
+                            <div class="Section-Article-Contenido-Descripcion">
+
+                                <p>Cambios:</p>
+                                <p>- Ahora las novedades y actualizaciones serán publicadas.</p>
+                                <p>- Mejora en la distribución del contenido de las barras laterales.</p>
+                                <p>- Añadido movimiento de desplazamiento a la sección de mensajes.</p>
+                                <p>- Renovación en el diseño de los artículos.</p>
+                                <p>- Ahora se puede acceder a una visualización de imagen completa.</p>
+                                <p>- Se han organizado los códigos HTML y CSS.</p>
+                                <br>
+                                <p>Más modificaciones en camino.</p>
+
+                            </div>
+
+                            <div class="hr8"></div>
+
+                            <div class="Section-Article-Contenido-Pie">
+
+                                <p>23:30 UTC-5</p>
+                                <p>6/01/2024</p>
+                                <p>Art #000000001</p>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                    <div id="Section-Todo-Contenido-AvisoFinal" class="Section-Seccion-Contenido-AvisoFinal">
+
+                        <p>Has encontrado el final de las publicaciones, próximamente este dejará de ser el límite.</p>
+
+                    </div>
+                    
+                </div>
+
+            </div>
+
+            <div data-content id="Section-Popular" class="SeccionDisponible SeccionTamañoModificable">
+
+                <div class="Section-Seccion-Aviso">
+
+                    <i class='bx bx-x Section-Seccion-Aviso-X'></i>
+                    <p class="Section-Seccion-Aviso-Aviso">Ahora te encuentras en la sección "Popular".</p>
+                    <i class='bx bx-x Section-Seccion-Aviso-X'></i>
+                        
+                </div>
+            
+                <div id="Section-Popular-Contenedor">
+
+                    <div class="Section-Seccion-Contenedor-Ausencia">
+                        <div>
+                            <i class='bx bxs-hot'></i>
+                            <p>Hmmm... que extraño, no hay<br>nada ahora mismo.</p>
+                        </div>
+                    </div>
+                    
+                </div>
+
+            </div>
+
+            <div data-content id="Section-Arte" class="SeccionDisponible SeccionTamañoModificable">
+
+                <div class="Section-Seccion-Aviso">
+
+                    <i class='bx bx-x Section-Seccion-Aviso-X'></i>
+                    <p class="Section-Seccion-Aviso-Aviso">Ahora te encuentras en la sección "Arte".</p>
+                    <i class='bx bx-x Section-Seccion-Aviso-X'></i>
+                        
+                </div>
+            
+                <div id="Section-Arte-Contenedor">
+
+                    <div class="Section-Seccion-Contenedor-Ausencia">
+                        <div>
+                            <i class='bx bxs-spa'></i>
+                            <p>Vaya, parece esto un poco vacío,<br>¿no te gustaría ser el primero?</p>
+                        </div>
+                    </div>
+                    
+                </div>
+
+            </div>
+
+            <div data-content id="Section-Especial" class="SeccionDisponible SeccionTamañoModificable">
+
+                <div class="Section-Seccion-Aviso">
+
+                    <i class='bx bx-x Section-Seccion-Aviso-X'></i>
+                    <p class="Section-Seccion-Aviso-Aviso">Ahora te encuentras en la sección "Especial".</p>
+                    <i class='bx bx-x Section-Seccion-Aviso-X'></i>
+                        
+                </div>
+            
+                <div id="Section-Especial-Contenedor">
+
+                    <div class="Section-Seccion-Contenedor-Ausencia">
+                        <div>
+                            <i class='bx bxs-star'></i>
+                            <p>Tan solo y aburrido, por el<br>momento...</p>
+                        </div>
+                    </div>
+
+                </div>
+            
+            </div>
+
+            <div data-content id="Section-Novedades" class="SeccionDisponible SeccionTamañoModificable SeccionActiva">
+
+                <div class="Section-Seccion-Aviso">
+
+                    <i class='bx bx-x Section-Seccion-Aviso-X'></i>
+                    <p class="Section-Seccion-Aviso-Aviso">Ahora te encuentras en la sección "Novedades".</p>
+                    <i class='bx bx-x Section-Seccion-Aviso-X'></i>
+                        
+                </div>
+
+                <div id="Section-Novedades-Contenedor">
+
+                    <article id="Art000000003">
+
+                        <div class="Section-Article-Perfil">
+
+                            <img src="imgs/insensitive09.jpg" alt="Profile" title="Insensitive09">
+
+                            <p>Insensitive09</p>
+
+                        </div>
+
+                        <div class="Section-Article-Contenido">
+
+                            <div class="Section-Article-Contenido-Imagenes">
+
+                                <a href="imgs/a3.jpeg" target="_blank"><img src="imgs/a3.jpeg" alt="Imagen artículo" title="Art Image"></a>
+
+                            </div>
+
+                            <h3>Novedades v 0.5</h3>
+
+                            <p class="Section-Article-Contenido-Subtitulo">Cambio de secciones</p>
+
+                            <div class="hr8"></div>
+
+                            <div class="Section-Article-Contenido-Descripcion">
+
+                                <p>Cambios:</p>
+                                <p>- Habilitado el cambio de secciones desde la barra lateral derecha.</p>
+                                <p>- Ahora se pueden abrir las opciones en el menú del perfil.</p>
+                                <p>- Los enlaces de "Recientes" pueden llevar a la sección correspondiente de su publicación.</p>
+                                <p>- Añadido un aviso en la parte superior de cada sección.</p>
+                                <p>- Se ha removido el fondo de la página (temporalmente).</p>
+                                <p>- Eliminada la opción "Pie de Página".</p>
+                                <p>- Se ha organizado el código JS</p>
+                                <br>
+                                <p>Más modificaciones en camino.</p>
+
+                            </div>
+
+                            <div class="hr8"></div>
+
+                            <div class="Section-Article-Contenido-Pie">
+
+                                <p>22:00 UTC-5</p>
+                                <p>10/01/2024</p>
+                                <p>Art #000000003</p>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                    <article id="Art000000002">
+
+                        <div class="Section-Article-Perfil">
+
+                            <img src="imgs/insensitive09.jpg" alt="Profile" title="Insensitive09">
+
+                            <p>Insensitive09</p>
+
+                        </div>
+
+                        <div class="Section-Article-Contenido">
+
+                            <div class="Section-Article-Contenido-Imagenes">
+
+                                <a href="imgs/a2.jpeg" target="_blank"><img src="imgs/a2.jpeg" alt="Imagen artículo" title="Art Image"></a>
+
+                            </div>
+
+                            <h3>Novedades v 0.4.1</h3>
+
+                            <p class="Section-Article-Contenido-Subtitulo">Retoque de tamaño</p>
+
+                            <div class="hr8"></div>
+
+                            <div class="Section-Article-Contenido-Descripcion">
+
+                                <p>Cambios:</p>
+                                <p>- La sección de publicaciones ahora cambia totalmente su tamaño al pulsar el botón de menú.</p>
+                                <br>
+                                <p>Más modificaciones en camino.</p>
+
+                            </div>
+
+                            <div class="hr8"></div>
+
+                            <div class="Section-Article-Contenido-Pie">
+
+                                <p>2:41 UTC-5</p>
+                                <p>7/01/2024</p>
+                                <p>Art #000000002</p>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                    <article id="Art000000001">
+
+                        <div class="Section-Article-Perfil">
+
+                            <img src="imgs/insensitive09.jpg" alt="Profile" title="Insensitive09">
+
+                            <p>Insensitive09</p>
+
+                        </div>
+
+                        <div class="Section-Article-Contenido">
+
+                            <div class="Section-Article-Contenido-Imagenes">
+
+                                <a href="imgs/a1.jpeg" target="_blank"><img src="imgs/a1.jpeg" alt="Imagen artículo" title="Art Image"></a>
+
+                            </div>
+
+                            <h3>Novedades v 0.4</h3>
+
+                            <p class="Section-Article-Contenido-Subtitulo">Actualización de orden</p>
+
+                            <div class="hr8"></div>
+
+                            <div class="Section-Article-Contenido-Descripcion">
+
+                                <p>Cambios:</p>
+                                <p>- Ahora las novedades y actualizaciones serán publicadas.</p>
+                                <p>- Mejora en la distribución del contenido de las barras laterales.</p>
+                                <p>- Añadido movimiento de desplazamiento a la sección de mensajes.</p>
+                                <p>- Renovación en el diseño de los artículos.</p>
+                                <p>- Ahora se puede acceder a una visualización de imagen completa.</p>
+                                <p>- Se han organizado los códigos HTML y CSS.</p>
+                                <br>
+                                <p>Más modificaciones en camino.</p>
+
+                            </div>
+
+                            <div class="hr8"></div>
+
+                            <div class="Section-Article-Contenido-Pie">
+
+                                <p>23:30 UTC-5</p>
+                                <p>6/01/2024</p>
+                                <p>Art #000000001</p>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                    <div class="Section-Seccion-Contenido-AvisoFinal">
+
+                        <p>Ahora todo parece tranquilo, más funciones en camino.</p>
+
+                    </div>
 
                 </div>
 
-                <div class="Section-Article-Contenido">
+            </div>
 
-                    <div class="Section-Article-Contenido-Imagenes">
+            <div data-content id="Section-Otros" class="SeccionDisponible SeccionTamañoModificable">
 
-                        <a href="imgs/a2.jpeg" target="_blank"><img src="imgs/a2.jpeg" alt="Imagen artículo" title="Art Image"></a>
+                <div class="Section-Seccion-Aviso">
 
-                    </div>
-
-                    <h3>Novedades v 0.4.1</h3>
-
-                    <p class="Section-Article-Contenido-Subtitulo">Retoque de tamaño</p>
-
-                    <div class="hr8"></div>
-
-                    <div class="Section-Article-Contenido-Descripcion">
-
-                        <p>Cambios:</p>
-                        <p>- La sección de publicaciones ahora cambia totalmente su tamaño al pulsar el botón de menú.</p>
-                        <br>
-                        <p>Más modificaciones en camino.</p>
-
-                    </div>
-
-                    <div class="hr8"></div>
-
-                    <div class="Section-Article-Contenido-Pie">
-
-                        <p>2:41 UTC-5</p>
-                        <p>7/01/2024</p>
-                        <p>Art #000000002</p>
-
-                    </div>
-
+                    <i class='bx bx-x Section-Seccion-Aviso-X'></i>
+                    <p class="Section-Seccion-Aviso-Aviso">Ahora te encuentras en la sección "Otros".</p>
+                    <i class='bx bx-x Section-Seccion-Aviso-X'></i>
+                        
                 </div>
+            
+                <div id="Section-Otros-Contenedor">
 
-            </article>
-
-            <article id="Art000000001">
-
-                <div class="Section-Article-Perfil">
-
-                    <img src="imgs/insensitive09.jpg" alt="Profile" title="Insensitive09">
-
-                    <p>Insensitive09</p>
-
+                    <div class="Section-Seccion-Contenedor-Ausencia">
+                        <div>
+                            <i class='bx bxs-note'></i>
+                            <p>Nada demasiado específico, aún.</p>
+                        </div>
+                    </div>
+                    
                 </div>
-
-                <div class="Section-Article-Contenido">
-
-                    <div class="Section-Article-Contenido-Imagenes">
-
-                        <a href="imgs/a1.jpeg" target="_blank"><img src="imgs/a1.jpeg" alt="Imagen artículo" title="Art Image"></a>
-
-                    </div>
-
-                    <h3>Novedades v 0.4</h3>
-
-                    <p class="Section-Article-Contenido-Subtitulo">Actualización de orden</p>
-
-                    <div class="hr8"></div>
-
-                    <div class="Section-Article-Contenido-Descripcion">
-
-                        <p>Cambios:</p>
-                        <p>- Ahora las novedades y actualizaciones serán publicadas.</p>
-                        <p>- Mejora en la distribución del contenido de las barras laterales.</p>
-                        <p>- Añadido movimiento de desplazamiento a la sección de mensajes.</p>
-                        <p>- Renovación en el diseño de los artículos.</p>
-                        <p>- Ahora se puede acceder a una visualización de imagen completa.</p>
-                        <p>- Se han organizado los códigos HTML y CSS.</p>
-                        <br>
-                        <p>Más modificaciones en camino.</p>
-
-                    </div>
-
-                    <div class="hr8"></div>
-
-                    <div class="Section-Article-Contenido-Pie">
-
-                        <p>23:30 UTC-5</p>
-                        <p>6/01/2024</p>
-                        <p>Art #000000001</p>
-
-                    </div>
-
-                </div>
-
-            </article>
-
-            <div id="Section-ArticuloFinal">
-
-                <p>Has encontrado el final de las publicaciones, próximamente este dejará de ser el límite.</p>
-
+            
             </div>
 
         </section>
@@ -405,7 +782,7 @@
 
                 <div id="Aside-3-Nav-Estado">
 
-                    <p><i class='bx bxs-lock-open-alt'></i>Público</p>
+                    <p id="SelecInicio" data-target="#Section-Inicio" class="Aside-3-Nav-Selector"><i class='bx bxs-home'></i>Inicio</p>
 
                 </div>
 
@@ -413,13 +790,13 @@
     
                 <ul>
                     
-                    <li><i class='bx bxs-home'></i>Inicio</li>
-                    <li><i class='bx bxs-leaf'></i></i>Todo</li>
-                    <li><i class='bx bxs-hot'></i>Popular</li>
-                    <li><i class='bx bxs-spa'></i>Arte</li>
-                    <li><i class='bx bxs-star'></i>Especial</li>
-                    <li id="Aside-3-Nav-Novedades"><i class='bx bxs-news' ></i>Novedades</li>
-                    <li><i class='bx bxs-note'></i>Otros</li>
+                    <li id="SelecPublico" data-target="#Section-Publico" class="Aside-3-Nav-Selector"><i class='bx bxs-lock-open-alt'></i>Público</li>
+                    <li id="SelecTodo" data-target="#Section-Todo" class="Aside-3-Nav-Selector"><i class='bx bxs-leaf'></i></i>Todo</li>
+                    <li id="SelecPopular" data-target="#Section-Popular" class="Aside-3-Nav-Selector"><i class='bx bxs-hot'></i>Popular</li>
+                    <li id="SelecArte" data-target="#Section-Arte" class="Aside-3-Nav-Selector"><i class='bx bxs-spa'></i>Arte</li>
+                    <li id="SelecEspecial" data-target="#Section-Especial" class="Aside-3-Nav-Selector"><i class='bx bxs-star'></i>Especial</li>
+                    <li id="SelecNovedades" data-target="#Section-Novedades" class="Aside-3-Nav-Selector SelectorActivo"><i class='bx bxs-news' ></i>Novedades</li>
+                    <li id="SelecOtros" data-target="#Section-Otros" class="Aside-3-Nav-Selector"><i class='bx bxs-note'></i>Otros</li>
     
                 </ul>
                 
