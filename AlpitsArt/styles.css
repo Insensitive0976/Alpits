@@ -353,25 +353,14 @@ aside{
     align-items: center;
     width: 25vw;
     height: 7vh;
-    cursor: pointer;
+    padding: 0 4%;
     /* background-image: url(imgs/finbarra.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center; */
 }
-#Aside-2-MasInformacion-Titulo:hover{
-    background-color: #e0e0e0;
-}
-#Aside-2-MasInformacion-Titulo i{
-    font-size: 3.7vh;
-}
-#Aside-2-MasInformacion-Contenedor{
-    position: fixed;
-    left: 29vw;
-    overflow: hidden;
-    background-color: #ffffff;
-    width: 0;
-    transition: width 0.5s ease;
+#Aside-2-MasInformacion-Titulo p{
+    cursor: default;
 }
 
 

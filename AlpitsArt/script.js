@@ -158,26 +158,6 @@ SelecOtros.forEach(seleccionador => {
     })
 })
 
-
-// Informacion extra extraible
-
-let InformacionTitulo = document.getElementById('Aside-2-MasInformacion-Titulo')
-
-InformacionTitulo.onclick = function(){
-
-    InformacionContenedor = document.getElementById('Aside-2-MasInformacion-Contenedor')
-    width = '0';
-    position = 'static';
-
-    if(InformacionContenedor.clientWidth == '0'){
-        width = '46vw'
-        position = 'fixed'
-    }
-
-    // InformacionContenedor.style.position = position
-    InformacionContenedor.style.width = width
-}
-
 // Aviso de seccion
 
 let Xs = document.querySelectorAll('.Section-Seccion-Aviso-X');
