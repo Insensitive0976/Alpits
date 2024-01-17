@@ -1,0 +1,170 @@
+/* Modificaciones Generales */
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url(../Fuentes/Montserrat-Regular.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+body{
+    background-image: url(../Images/background1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+main{
+    width: 100%;
+    padding: 20px;
+    margin: auto;
+    margin-top: 100px;
+}
+
+/* Sistema de Ingreso */
+
+.divIngreso{
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    position: relative;
+}
+
+/*      Sistema de Ingreso - Espalda */
+
+.divIngreso-Espalda{
+    width: 100%;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    backdrop-filter: blur(10px);
+    background-color: rgba(0, 128, 255, 0.5);
+}
+.divIngreso-Espalda div{
+    margin: 100px 40px;
+    color: #ffffff;
+    transition: all 500ms;
+}
+.divIngreso-Espalda div p,
+.divIngreso-Espalda div button{
+    margin-top: 30px;
+}
+.divIngreso-Espalda div h3{
+    font-weight: 400;
+    font-size: 26px;
+}
+.divIngreso-Espalda div button{
+    padding: 10px 40px;
+    border: 2px solid #ffffff;
+    background: transparent;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    color: #ffffff;
+    outline: none;
+    transition: all 300ms ;
+}
+.divIngreso-Espalda div button:hover{
+    background-color: #ffffff;
+    color: #46a2fd;
+}
+
+/*      Sistema de Ingreso - Frente */
+
+.divIngreso-Frente{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 380px;
+    position: relative;
+    top: -185px;
+    left: 10px;
+
+    transition: left 500ms cubic-bezier(0.175, 0.885, 0.320, 1.275);
+}
+.divIngreso-Frente form{
+    width: 100%;
+    padding: 80px 20px;
+    background-color: #ffffff;
+    position: absolute;
+    border-radius: 20px;
+}
+.divIngreso-Frente form h2{
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #46a2fd;
+}
+.divIngreso-Frente form input{
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px;
+    border: none;
+    background-color: #f2f2f2;
+    font-size: 16px;
+    outline: none;
+}
+.divIngreso-Frente form button{
+    padding: 10px 40px;
+    margin-top: 40px;
+    border: none;
+    font-size: 14px;
+    background-color: #46a2fd;
+    color: #ffffff;
+    cursor: pointer;
+    outline: none;
+}
+.formIngreso-Frente-Ingreso{
+    opacity: 1;
+    display: block;
+}
+.formIngreso-Frente-Registrarse{
+    display: none;
+}
+
+/* Sistema de Ingreso: Responsive Design */
+
+@media screen and (max-width: 850px){
+
+    /* Modificaciones Generales */
+    main{
+        margin-top: 50px;
+    }
+
+    /* Sistema de Ingreso */
+
+
+    /*      Sistema de Ingreso - Espalda */
+    
+    .divIngreso-Espalda{
+        max-width: 350px;
+        height: 300px;
+        flex-direction: column;
+        margin: auto;
+    }
+    .divIngreso-Espalda div{
+        margin: 0px;
+        position: absolute;
+    }
+    .divIngreso-Espalda-Ingresar{
+        display: none;
+    }
+
+    /* Sistema de Ingreso - Frente */
+
+    .divIngreso-Frente{
+        top: -10px;
+        left: 0;
+        margin: auto;
+    }
+    .divIngreso-Frente form{
+        position: relative;
+    }
+
+}
