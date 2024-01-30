@@ -6,8 +6,8 @@ window.addEventListener('resize', ModAncho);
 let divEspIng = document.querySelector('.divIngreso-Espalda-Ingresar');
 let divEspReg = document.querySelector('.divIngreso-Espalda-Registrarse');
 let IngFre = document.querySelector('.divIngreso-Frente');
-let formIng = document.querySelector('.formIngreso-Frente-Ingresar');
-let formReg = document.querySelector('.formIngreso-Frente-Registrarse');
+let formIng = document.querySelector('.divIngreso-Frente-Ingresar');
+let formReg = document.querySelector('.divIngreso-Frente-Registrarse');
 
 function ModAncho(){
     if(window.innerWidth > 850){

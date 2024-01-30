@@ -1,0 +1,39 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url(../../Fuentes/Montserrat-Regular.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+}
+#divPerfil{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+}
+#duvPerfil-Cabeza{
+    display: flex;
+    flex-direction: column;
+}
+#divPerfil-Cabeza h2{
+    text-align: center;
+}
+#divPerfil-Cabeza img{
+    width: 20vw;
+    border-radius: 100%;
+    border: 0.5vw solid #808080;
+}
+#divPerfil-Cuerpo{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+#pPerfil-Cuerpo-Descripcion-Numero{
+    text-align: center;
+}
